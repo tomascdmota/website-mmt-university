@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
+
+}
+body {
+  min-height: 100vh;
 }
 
 nav{
@@ -43,11 +47,34 @@ nav{
   width: 100%;
   margin-left: 20px;
 }
+.fa {
+  margin: 5px 10px;
+  padding: 5px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
 
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 350%;
+  width: 130%;
   font-size: 16px;
 }
 
@@ -69,6 +96,7 @@ nav{
 
 .nav-links li a:hover{
   color: #0088a9;
+  text-decoration: underline;
 }
 
 
@@ -86,69 +114,15 @@ nav{
   margin-right: 20px;
 }
 
-@media screen and (max-width: 1600px){
-  .nav-links
-   {
-    display: flex;
-    justify-content: space-around;
-    width: 350%;
-    font-size: 16px;
-  }
 
-}
-
-@media screen and (max-width:1224px){
-  .nav-links
-   {
-    display: flex;
-    justify-content: space-around;
-    width: 350%;
-    font-size: 14px;
-  }
-
-}
-
-@media screen and (max-width:1000px){
-  .nav-links
-   {
-    display: flex;
-    justify-content: space-around;
-    width: 250%;
-    font-size: 13px;
-
-  }
-
-}
-
-@media screen and (max-width:900px){
-  .nav-links
-   {
-    display: flex;
-    justify-content: space-around;
-    width: 200%;
-    font-size: 7px;
-
-  }
-
-}
-
-
-
-@media screen and (max-width:800px){
-  .nav-links
-   {
-    display: flex;
-    justify-content: space-around;
-    width: 200%;
-    font-size: 8px;
-  }
-
-}
 
 @media screen and (max-width:768px){
 
   body{
     overflow-x: hidden;
+  }
+  nav{
+    height: 90px;
   }
   .nav-links{
     position: absolute;
@@ -176,72 +150,100 @@ nav{
     height: 50px;
     width: 80%;
     margin-left: 10px;
+    margin-bottom: 30px;
   }
-}
 
-.nav-active {
-  transform: translateX(0%);
-}
+  .fa {
+    visibility: hidden;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
 
-@keyframes navLinkFade{
-  from{
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+  }
+
+  .toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2{
     opacity: 0;
-    transform: translateX(50px);
-  }to {
-      opacity: 1;
-      transform: translateX(0px);
   }
-}
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+  }
 
-.toggle .line1{
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2{
-  opacity: 0;
-}
-.toggle .line3{
-  transform: rotate(45deg) translate(-5px,-6px);
+
+
 }
 
 
-.container {
-  width: 100%;
-  margin-top: 8vh;
-  background: #f9f9f9;
-  font-size: 24px;
+
+
+footer {
+  background: #313840;
+}
+.footer-image {
+  float: center;
 }
 
-.parallax {
-  background: url("quem-somos.png") ;
-  background-size: cover;
-  height: 900px;
-  width: 100%
-}
 
-.parallax2{
-  background: url("servicos.png") no-repeat center;
-  background-size: cover;
-  height: 1000px;
+.fwh-slide {
+  height: 100vh;
+  box-sizing: border-box;
+}
+.fwh-slide img {
+  height: 100%;
   width: 100%;
 }
 
-.parallax3{
-  background: url("depoimentos.png") no-repeat center;
-  background-size: cover;
-  height: 1000px;
+.fwh-slide2 {
+  height: 95vh;
+  box-sizing: border-box;
+}
+.fwh-slide2 img {
+  height: 100%;
   width: 100%;
 }
 
-.parallax4{
-  background: url("comecando.png") no-repeat center;
-  background-size: cover;
-  height: 1000px;
+.fwh-slide3 {
+  height: 95vh;
+  box-sizing: border-box;
+}
+.fwh-slide3 img {
+  height: 100%;
   width: 100%;
 }
 
-.parallax5{
-  background: url("sac.png") no-repeat center;
-  background-size: cover;
-  height: 1000px;
+.fwh-slide4 {
+  height: 95vh;
+  box-sizing: border-box;
+}
+.fwh-slide4 img {
+  height: 100%;
+  width: 100%;
+}
+.fwh-slide5 {
+  height: 95vh;
+  box-sizing: border-box;
+}
+.fwh-slide5 img {
+  height: 100%;
+  width: 100%;
+}
+
+.fwh-slide6 {
+  height: 95vh;
+  box-sizing: border-box;
+}
+.fwh-slide6 img {
+  height: 100%;
   width: 100%;
 }
