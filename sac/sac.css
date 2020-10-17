@@ -1,4 +1,3 @@
-
 *{
   margin: 0;
   padding: 0px;
@@ -46,7 +45,7 @@ a {
   margin-top: 0;
   font-weight: 200;
   color: white;
-  font-family: fantasy;
+  font-family: sans-serif;
   font-size: 70px;
   letter-spacing: 15px;
   text-transform: uppercase;
@@ -134,50 +133,4 @@ a {
   margin-top: 8px;
   width: 50%;
   border-radius: 10px;
-}
-
-
-
-.fwh-slide {
-  height: 100vh;
-  box-sizing: border-box;
-}
-.fwh-slide img {
-  height: 100%;
-  width: 100%;
-}
-
-.fwh-slide2 {
-  height: 95vh;
-  box-sizing: border-box;
-}
-.fwh-slide2 img {
-  height: 100%;
-  width: 100%;
-}
-
-.fwh-slide3 {
-  height: 95vh;
-  box-sizing: border-box;
-}
-.fwh-slide3 img {
-  height: 100%;
-  width: 100%;
-}
-
-.fwh-slide4 {
-  height: 95vh;
-  box-sizing: border-box;
-}
-.fwh-slide4 img {
-  height: 100%;
-  width: 100%;
-}
-.fwh-slide5 {
-  height: 95vh;
-  box-sizing: border-box;
-}
-.fwh-slide5 img {
-  height: 100%;
-  width: 100%;
 }
