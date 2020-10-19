@@ -3,7 +3,7 @@ footer{
 }
 .footer-logo { grid-area: logo; }
 .footer-distributed{
-	background-color:  #313840;
+	background-color:  #130055;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;

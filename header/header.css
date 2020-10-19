@@ -1,268 +1,377 @@
-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 8vh;
-  background-color: #313840;
-  font-family: "Montserrat", sans-serif;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
+body {
+  font-family: monospace;
 }
 
-li.active a {
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  height: 10vh;
   background: #313840;
 }
 
-.cta {
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  color: #edf0f1;
-  text-decoration: none;
-}
-
-.cta:hover {
-  background-color: rgba(0, 136, 169, 0.8);
-}
-
-.logo {
-  height: 90px;
-  width: 100%;
-  margin-left: 20px;
-}
-
-.lang-menu {
-  margin-top: 25px;
-  position: relative;
-}
-
-.selected-lang {
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-
-}
-.selected-lang:before{
-  content: '';
-  display: block;
-  width: 32px;
-  height: 32px;
-  background-image: url(https://www.countryflags.io/us/flat/64.png);
-}
-
-.lang-menu ul {
-  margin-left: 0;
-  padding: 0;
-  background-color: #fff;
-  border: 1px solid #f8f8f8;
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-  display: none;
+nav img {
+  width: 150px;
   position: absolute;
-  top: 40px;
-  right: 0;
-
+  top: 7px;
+  left: 0;
+  margin-left: 35px;
 }
-
-.lang-menu ul li {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-.lang-menu ul li a {
-  width: 140px;
-  display: block;
-  padding:5 px 10px;
-  text-decoration: none;
-}
-
-.lang-menu ul li a:hover {
-  background-color: #f2f2f2;
-  border-radius: 15px;
-}
-
-
-.lang-menu ul li a:before{
-  content: '';
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  margin-right: 10px;
-  vertical-align: middle;
-  background-image: url("https://www.countryflags.io/us/flat/64.png");
-}
-
-
-
-
-.de:before {
-  background-image: url("https://www.countryflags.io/de/flat/64.png");
-}
-
-.pt:before {
-  background-image: url("https://www.countryflags.io/br/flat/64.png");
-}
-.es:before {
-  background-image: url("https://www.countryflags.io/es/flat/64.png");
-}
-
-.lang-menu:hover ul{
-  display: block;
-}
-
-
-
-
 
 .social-media-icons {
-  height: 10px;
+  position: absolute;
+  top: 2vh;
+  left: 0;
   font-size: 30px;
-  margin-bottom: 0px;
-  margin-left: 200px;
+  margin-left: 215px;
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
- .fa-youtube {
+.fa-youtube {
   background: #313840;
   color: white;
-  height: 90vh;
+  margin-top: 10px;
+  margin-left: 10px;
+
 }
 
 .fa-instagram {
   background: #313840;
   color: white;
-  margin-top: 30px;
-  height: 90vh;
-  margin-right: 30px;
+  margin-top: 10px;
 }
 
-.nav-links {
-  display: flex;
-  justify-content: space-around;
-  width: 130%;
-  font-size: 16px;
-}
-
-.nav-links li{
-    list-style: none;
-    color: #edf0f1;
-    text-transform: uppercase;
-    margin-right: 5px;
-}
-
-.nav-links a{
-  color: rgb(226,226,226);
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-size: 14px
-  transition: all 0.3s ease 0s;
+nav ul{
+  float: right;
+margin-right: 25px;
+margin-top: 20px;
 
 }
 
-.nav-links li a:hover{
-  color: #0088a9;
-  text-decoration: underline;
+nav ul li{
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 15px;
+
 }
 
-
-.nav .active{
-  background-color: #0088a9;
+nav ul li a{
+  position: relative;
+  color: white;
+  font-size: 18px;
+  padding: 5px 0;
+  text-transform: uppercase;
 }
 
-.burger div{
-  width: 25px;
+nav ul li a:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
   height: 3px;
-  background-color: rgb(226,226,226);
-  margin: 5px;
-  transition: all 0.3s ease;
+  width: 100%;
+  background:#0088a9;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
 }
 
-.burger {
-  display: none;
+nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+
+
+}
+
+nav ul li a:hover{
+  border-radius: 4px;
+  transition: all 0.2s ease0;
+  color: #0088a9;
+
+}
+
+
+
+nav ul li2{
+  margin-left: 20px;
+  padding: 0.4rem 0.6rem;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 500px;
   cursor: pointer;
-  margin-right: 20px;
+  transition: all 0.3s ease 0s;
+  font-family: "monospace", sans-serif;
+  font-weight: 500;
+  color: #0088a9;
+  text-decoration: none;
+  font-size: 12px;
+
+
+}
+
+nav ul li2:hover{
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  color: #0088a9;
+  background-color: white;
+}
+nav ul li2 a{
+  position: relative;
+  color: white;
+  font-size: 18px;
+}
+
+nav ul li2 a:hover{
+  border-radius: 4px;
+  transition: all 0.2s ease0;
+  color: #0088a9;
 }
 
 
 
-@media screen and (max-width:768px){
+label #btn,
+label #cancel{
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 
-  body{
-    overflow-x: hidden;
+}
+
+#check{
+  display: none;
+}
+
+
+@media (max-width: 1118px) {
+  nav img{
+    left: 0;
+    margin-left: 20px;
+    top:13px;
+    width: 130px;
   }
-  nav{
-    height: 90px;
-  }
-  .nav-links{
+
+  .social-media-icons {
     position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 9vh;
-    background-color: #313840;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }.cta {
-    display: none;
-  }
-  .nav-links li{
-    opacity: 1;
+    top: 2vh;
+    left: 0;
+    font-size: 30px;
+    margin-left: 220px;
   }
 
-  .burger {
-    display: block;
+  nav ul li a{
+    font-size: 14px;
+  }
+  nav ul li2 a{
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width:1220px){
+  nav img{
+    left: 0;
+    margin-left: 20px;
+    top:13px;
+    width: 130px;
+  }
+  .social-media-icons {
+    position: absolute;
+    top: 2.4vh;
+    left: 0;
+    font-size: 26px;
+    margin-left: 160px;
   }
 
-  .logo {
-    height: 50px;
-    width: 80%;
-    margin-left: 10px;
-    margin-bottom: 30px;
+
+
+  nav ul li a{
+    font-size: 15px;
+  }
+  nav ul li2 a{
+    font-size: 15px;
+  }
+}
+
+@media (max-width:1050px){
+  nav img{
+    left: 0;
+    margin-left: 20px;
+    top:13px;
+    width: 110px;
+  }
+  .social-media-icons {
+    position: absolute;
+    top: 2.8vh;
+    left: 0;
+    font-size: 20px;
+    margin-left: 150px;
   }
 
-  .fa {
-    visibility: hidden;
+
+
+  nav ul li a{
+    font-size: 13.5px;
   }
-  .nav-active {
-    transform: translateX(0%);
+  nav ul li2 a{
+    font-size: 13.5px;
+  }
+}
+
+@media (max-width:975px){
+  nav img{
+    left: 0;
+    margin-left: 20px;
+    top:19px;
+    width: 100px;
+  }
+  .social-media-icons {
+    position: absolute;
+    top: 2.8vh;
+    left: 0;
+    font-size: 20px;
+    margin-left: 130px;
   }
 
-  @keyframes navLinkFade{
-    from{
-      opacity: 0;
-      transform: translateX(50px);
-    }to {
-        opacity: 1;
-        transform: translateX(0px);
+
+
+  nav ul li a{
+    font-size: 12.9px;
+  }
+  nav ul li2 a{
+    font-size: 12.9px;
+  }
+}
+@media (max-width: 944px) {
+    nav img{
+      left: 0px;
+      margin-left: 10px;
+      top:20px;
+      width: 90px;
     }
-  }
 
-  .toggle .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  .toggle .line2{
-    opacity: 0;
-  }
-  .toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-  }
+    .social-media-icons {
+      position: absolute;
+      top: 2.8vh;
+      left: 0;
+      font-size: 20px;
+      margin-left: 110px;
+    }
+    nav ul li a{
+      font-size: 12px;
+    }
+    nav ul li2 a{
+      font-size: 12px;
+    }
+    }
 
+@media (max-width: 900px) {
+        nav img{
+          left: 0px;
+          margin-left: 10px;
+          top:20px;
+          width: 90px;
+        }
+        .social-media-icons {
+          position: absolute;
+          top: 2.8vh;
+          left: 0;
+          font-size: 20px;
+          margin-left: 110px;
+        }
+
+        nav ul li a{
+          font-size: 11.3px;
+        }
+        nav ul li2 a{
+          font-size: 11.3px;
+        }
+        }
+
+@media (max-width: 860px) {
+      label #btn{
+        display: block;
+
+
+      }
+
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #313840;
+        top: 7.9vh;
+        left: 100%;
+        text-align: center;
+        transition:  all .7s
+      }
+
+      nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+      }
+      nav ul li2{
+        display: block;
+      text-align: center;
+      padding: 1.5rem;
+      list-style: none;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 50%;
+      background: #4ad9e4;
+      text-decoration: none;
+      color: #ffffff;
+      padding-bottom: 1.5rem;
+      font-size: 20px;
+
+
+
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      nav ul li2 a{
+
+      font-size: 20px;
+
+      }
+      nav img{
+        left: 0px;
+        margin-left: 10px;
+        top:20px;
+        width: 130px;
+      }
+      .social-media-icons {
+        position: absolute;
+        top: 2.9vh;
+        left: 0;
+        font-size: 30px;
+        margin-left: 160px;
+      }
+
+      #check:checked ~ ul{
+        left: 0;
+      }
+
+      #check:checked ~ label #btn{
+        display: none;
+      }
+      #check:checked ~ label #cancel{
+        display: block;
+      }
+}
 
 
 }
