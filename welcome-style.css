@@ -258,7 +258,7 @@ label #cancel{
   nav ul li{
     display: inline-block;
     line-height: 50px;
-    margin: 5px 20px;
+    margin: 5px 25px;
     font-family: "Montserrat", sans-serif;
   }
 
@@ -296,7 +296,7 @@ label #cancel{
 
     nav ul li{
       display: inline-block;
-      margin: 5px 10px;
+      margin: 5px 30px;
       line-height: 20px;
       font-family: "Montserrat", sans-serif;
     }
@@ -336,7 +336,7 @@ label #cancel{
 
   nav ul li{
     display: inline-block;
-    margin: 5px 10px;
+    margin: 5px 20px;
     line-height: 20px;
     font-family: "Montserrat", sans-serif;
   }
@@ -353,6 +353,76 @@ label #cancel{
     text-transform: uppercase;
   }
 }
+
+@media screen and (max-width: 1350px) {
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+    transition: all 0.5s ease;
+    font-family: "Montserrat", sans-serif;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+  }
+
+  nav ul{
+  float: right;
+  margin-right: 25px;
+  margin-top: 30px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    margin: 5px 20px;
+    line-height: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 5px 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    font-size: 8vh;
+    margin-right: 5vh;
+
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background: #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 40px;
+
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 60px;
+    margin-right: 5px;
+
+  }
+}
+
 
 
 @media screen and (max-width: 1300px) {
@@ -548,6 +618,7 @@ label #cancel{
 
 
 
+
 .container2 {
   background-image: url("quemsomos.svg");
   height: 100vh;
@@ -585,6 +656,241 @@ label #cancel{
   font-size: 17px;
   font-family: 'Source Sans Pro', sans-serif;
 }
+@media screen and (max-width: 1900px) {
+  .container2 h2 {
+    margin: auto;
+    padding-top: 22vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .container2 p {
+    margin: auto;
+    padding-top: 2vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}
+@media screen and (max-width: 1800px) {
+
+  .container2 h1 {
+    margin: auto;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-left: 9vh;
+    padding-top: 15vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: #7e7d7d;
+  }
+
+  .container2 h2 {
+    margin: auto;
+    padding-top: 18vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .container2 p {
+    margin: auto;
+    padding-top: 2vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+}
+
+@media screen and (max-width: 1700px) {
+
+  .container2 h1 {
+    margin: auto;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-left: 5vh;
+    padding-top: 15vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: #7e7d7d;
+  }
+
+  .container2 h2 {
+    margin: auto;
+    padding-top: 15vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .container2 p {
+    margin: auto;
+    padding-top: 2vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+}
+
+@media screen and (max-width: 1650px) {
+  .container2 h2 {
+    margin: auto;
+    padding-top: 13vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .container2 p {
+    margin: auto;
+    padding-top: 2vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+
+  .container2 h1 {
+    margin: auto;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-left: 5vh;
+    padding-top: 15vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: #7e7d7d;
+  }
+
+  .container2 h2 {
+    margin: auto;
+    padding-top: 10vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .container2 p {
+    margin: auto;
+    padding-top: 2vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+}
+
+@media screen and (max-width: 1550px) {
+
+  .container2 h1 {
+    margin: auto;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-left: 5vh;
+    padding-top: 15vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #7e7d7d;
+  }
+
+  .container2 h2 {
+    margin: auto;
+    padding-top: 8vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .container2 p {
+    margin: auto;
+    padding-top: 2vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+}
+
+.container3 {
+  background-image: url("home.svg");
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  max-width: 100%;
+  left: 0;
+}
+
+.container3 h1 {
+  margin: auto;
+  line-height: 60px;
+  vertical-align: middle;
+  margin-left: 10vh;
+  font-size: 70px;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  padding-top: 15vh;
+
+}
+
+.container3 h2 {
+  margin: auto;
+  line-height: 30px;
+  vertical-align: middle;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  margin-left: 2vh;
+  color: #fff;
+}
+
+@media screen and (max-width: 1400px) {
+
+  .container2 h1 {
+    margin: auto;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-left: 5vh;
+    padding-top: 4vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #7e7d7d;
+  }
+
+  .container2 h2 {
+    margin: auto;
+    padding-top: 12vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .container2 p {
+    margin: auto;
+    padding-top: 2vh;
+    padding-left: 30vw;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+}
 
 .container3 {
   background-image: url("home.svg");
@@ -619,18 +925,148 @@ label #cancel{
 }
 
 
-.container3 h1 {
-  margin: auto;
-  line-height: 60px;
-  vertical-align: middle;
-  margin-left: 10vh;
-  font-size: 70px;
-  color: #fff;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-transform: uppercase;
-  padding-top: 15vh;
+
+
+
+@media screen and (max-width: 1850px) {
+  .container3 h1 {
+    margin: auto;
+    line-height: 60px;
+    vertical-align: middle;
+    margin-left: 5vh;
+    font-size: 67px;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    padding-top: 18vh;
+
+  }
+
+  .container3 h2 {
+    margin: auto;
+    line-height: 30px;
+    vertical-align: middle;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    margin-left: 2vh;
+    color: #fff;
+  }
+
+
+
 }
 
+@media screen and (max-width: 1700px) {
+  .container3 h1 {
+    margin: auto;
+    line-height: 60px;
+    vertical-align: middle;
+    margin-left: 5vh;
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    padding-top: 15vh;
+
+  }
+
+  .container3 h2 {
+    margin: auto;
+    line-height: 30px;
+    vertical-align: middle;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    margin-left: 2vh;
+    color: #fff;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1550px) {
+  .container3 h1 {
+    margin: auto;
+    line-height: 60px;
+    vertical-align: middle;
+    margin-left: 5vh;
+    font-size: 55px;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    padding-top: 16vh;
+
+  }
+
+  .container3 h2 {
+    margin: auto;
+    line-height: 30px;
+    vertical-align: middle;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    margin-left: 2vh;
+    color: #fff;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1500px) {
+  .container3 h1 {
+    margin: auto;
+    line-height: 60px;
+    vertical-align: middle;
+    margin-left: 5vh;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    padding-top: 12vh;
+
+  }
+
+  .container3 h2 {
+    margin: auto;
+    line-height: 30px;
+    vertical-align: middle;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    margin-left: 2vh;
+    color: #fff;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1400px) {
+  .container3 h1 {
+    margin: auto;
+    line-height: 60px;
+    vertical-align: middle;
+    margin-left: 4vh;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    padding-top: 12vh;
+
+  }
+
+  .container3 h2 {
+    margin: auto;
+    line-height: 30px;
+    vertical-align: middle;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    margin-left: 2vh;
+    color: #fff;
+  }
+
+
+
+}
 
 .container4 {
   background-image: url("onde-atuamos.svg");
@@ -663,6 +1099,10 @@ label #cancel{
   font-size: 20px;
   color: #7e7d7d;
 }
+
+
+
+
 
 .container5 {
   background-image: url("servicos.svg");
