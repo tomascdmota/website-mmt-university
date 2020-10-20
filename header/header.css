@@ -11,23 +11,26 @@ body {
 
 nav {
   height: 10vh;
-  background: #313840;
+  background: #05031b;
+  opacity: 0.85;
+        transition: all 0.5s ease;
+        z-index: 1;
 }
 
 nav img {
-  width: 150px;
-  position: absolute;
-  top: 7px;
-  left: 0;
-  margin-left: 35px;
+  height: 80px;
+  width: 80px;
+  margin-left: 50px;
+  margin-top: 11px;
 }
 
 .social-media-icons {
   position: absolute;
-  top: 2vh;
+  top: 10vh;
   left: 0;
-  font-size: 30px;
+  font-size: 50px;
   margin-left: 215px;
+  margin-bottom: 300vh;
 }
 
 .fa:hover {
@@ -35,22 +38,22 @@ nav img {
 }
 
 .fa-youtube {
-  background: #313840;
+  background:  #05031b;
   color: white;
-  margin-top: 10px;
-  margin-left: 10px;
-
+  margin-top: 0px;
+  font-size: 30px;
 }
 
 .fa-instagram {
-  background: #313840;
+  background:  #05031b;
   color: white;
-  margin-top: 10px;
+  top: 0;
+  font-size: 30px;
 }
 
 nav ul{
   float: right;
-margin-right: 25px;
+margin-right: 10px;
 margin-top: 20px;
 
 }
@@ -58,17 +61,22 @@ margin-top: 20px;
 nav ul li{
   display: inline-block;
   line-height: 50px;
-  margin: 0 15px;
+  margin: 5px 43px;
 
 }
+
+
 
 nav ul li a{
   position: relative;
   color: white;
-  font-size: 18px;
-  padding: 5px 0;
+  font-size: 16px;
+  padding: 5px 6px;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
+
+
 
 nav ul li a:before{
   position: absolute;
@@ -77,7 +85,7 @@ nav ul li a:before{
   bottom: 0;
   height: 3px;
   width: 100%;
-  background:#0088a9;
+  background: rgb(220,52,52);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform .4s linear;
@@ -93,52 +101,34 @@ nav ul li a:hover:before{
 nav ul li a:hover{
   border-radius: 4px;
   transition: all 0.2s ease0;
-  color: #0088a9;
+  color: rgb(220,52,52);
 
 }
 
 
 
-nav ul li2{
-  margin-left: 20px;
-  padding: 0.4rem 0.6rem;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 500px;
+.cta {
+
+  padding: 9px 18px;
+  background-color: rgb(220,52,52);
+  border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  font-family: "monospace", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: #0088a9;
+  color: #edf0f1;
+  right: 0;
+  margin-left: 20px;
   text-decoration: none;
-  font-size: 12px;
-
-
 }
 
-nav ul li2:hover{
-  border-radius: 50px;
-  transition: all 0.3s ease 0s;
-  color: #0088a9;
-  background-color: white;
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
 }
-nav ul li2 a{
-  position: relative;
-  color: white;
-  font-size: 18px;
-}
-
-nav ul li2 a:hover{
-  border-radius: 4px;
-  transition: all 0.2s ease0;
-  color: #0088a9;
-}
-
-
 
 label #btn,
 label #cancel{
-  color: white;
+  color: red;
   font-size: 30px;
   float: right;
   line-height: 80px;
@@ -153,7 +143,150 @@ label #cancel{
 }
 
 
-@media (max-width: 1118px) {
+@media (max-width:1503){
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 20px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 20px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 9px;
+    padding: 5px 5px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 18px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 11px;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: #edf0f1;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+}
+@media screen and (max-width: 1118px) {
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1
+        }
+
   nav img{
     left: 0;
     margin-left: 20px;
@@ -172,145 +305,2745 @@ label #cancel{
   nav ul li a{
     font-size: 14px;
   }
-  nav ul li2 a{
+
+}
+
+@media screen and (max-width:1330px){
+
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 11px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 30px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 10px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 43px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 13px;
+    padding: 5px 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 18px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 29px;
+    text-decoration: none;
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+}
+
+@media screen and  (max-width:1700px){
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 11px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 30px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 20px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 16px;
+    padding: 5px 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 18px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 30px;
+    text-decoration: none;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+
+}
+@media screen and  (max-width:1220px){
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 11px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 30px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 20px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding: 5px 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 18px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 30px;
+    text-decoration: none;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+}
+@media screen and  (max-width:1820.5px){
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 11px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 30px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 20px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 15px;
+    padding: 5px 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 18px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 30px;
+    text-decoration: none;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+}
+
+@media screen and  (max-width:1820px){
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 11px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 30px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 20px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding: 5px 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 18px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 30px;
+    text-decoration: none;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+}
+
+
+@media screen and  (max-width:1050px){
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 11px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 30px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 20px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding: 5px 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 18px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 30px;
+    text-decoration: none;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+}
+
+@media screen and  (max-width:975px){
+  nav {
+    height: 10vh;
+    background:#05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 11px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+  .fa-instagram {
+    background: #05031b;
+    color: white;
+    top: 0;
+    font-size: 30px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 20px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
     font-size: 14px;
+    padding: 5px 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
   }
-}
 
 
-@media (max-width:1220px){
-  nav img{
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
     left: 0;
-    margin-left: 20px;
-    top:13px;
-    width: 130px;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
   }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 18px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 30px;
+    text-decoration: none;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 944px) {
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 11px;
+  }
+
   .social-media-icons {
     position: absolute;
-    top: 2.4vh;
     left: 0;
-    font-size: 26px;
-    margin-left: 160px;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+  .fa-instagram {
+    background: #05031b;
+    color: white;
+    top: 0;
+    font-size: 30px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 20px;
+
   }
 
 
 
   nav ul li a{
-    font-size: 15px;
+    position: relative;
+    color: white;
+    font-size: 14px;
+    padding: 5px 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
   }
-  nav ul li2 a{
-    font-size: 15px;
-  }
-}
 
-@media (max-width:1050px){
-  nav img{
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
     left: 0;
-    margin-left: 20px;
-    top:13px;
-    width: 110px;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
   }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 18px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 30px;
+    text-decoration: none;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+    }
+
+@media screen and (max-width: 900px) {
+
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 11px;
+  }
+
   .social-media-icons {
     position: absolute;
-    top: 2.8vh;
     left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+  .fa-instagram {
+    background: #05031b;
+    color: white;
+    top: 0;
+    font-size: 30px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 18px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 13px;
+    padding: 5px 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 18px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 30px;
+    text-decoration: none;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+
+
+        }
+
+
+@media (max-width:1460px){
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 11px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
     font-size: 20px;
-    margin-left: 150px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 20px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 10px;
+
   }
 
 
 
   nav ul li a{
-    font-size: 13.5px;
+    position: relative;
+    color: white;
+    font-size: 12px;
+    padding: 5px 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
   }
-  nav ul li2 a{
-    font-size: 13.5px;
-  }
-}
 
-@media (max-width:975px){
-  nav img{
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
     left: 0;
-    margin-left: 20px;
-    top:19px;
-    width: 100px;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
   }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 18px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 22px;
+    text-decoration: none;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+}
+@media (max-width:1185px){
+  nav {
+    height: 10vh;
+    background:#05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+
   .social-media-icons {
     position: absolute;
-    top: 2.8vh;
     left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background: #05031b;
+    color: white;
+    margin-top: 0px;
     font-size: 20px;
-    margin-left: 130px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 20px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 12px;
+
   }
 
 
 
   nav ul li a{
-    font-size: 12.9px;
+    position: relative;
+    color: white;
+    font-size: 11px;
+    padding: 5px 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
   }
-  nav ul li2 a{
-    font-size: 12.9px;
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
   }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 6px 15px;
+    background-color: rgb(220,52,52);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
 }
-@media (max-width: 944px) {
-    nav img{
-      left: 0px;
-      margin-left: 10px;
-      top:20px;
-      width: 90px;
+@media screen and  (max-width:1592px){
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 11px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 30px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 20px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 16px;
+    padding: 5px 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 18px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 30px;
+    text-decoration: none;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+}
+
+@media (max-width:1130px){
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 20px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 20px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 9px;
+    padding: 5px 5px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 20px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 11px;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+}
+@media (max-width:1502px){
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 20px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 20px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 14px;
+    padding: 5px 5px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 20px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 14px;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+}
+@media (max-width: 1015px){
+  nav {
+    height: 10vh;
+    background:#05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background: #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .fa-instagram {
+    background: #05031b;
+    color: white;
+    top: 0;
+    font-size: 20px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 15px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 7px;
+    padding: 5px 4px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 15px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 11px;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+
+}
+@media (max-width: 1315px){
+  nav {
+    height: 10vh;
+    background:#05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background: #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 20px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 15px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 13px;
+    padding: 5px 4px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 15px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 11px;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+
+}
+@media (max-width: 1159px){
+  nav {
+    height: 10vh;
+    background:#05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background: #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 20px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 15px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 11px;
+    padding: 5px 4px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 15px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 11px;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+
+
+}
+@media (max-width: 1074px){
+  nav {
+    height: 10vh;
+    background: #05031b;
+    opacity: 0.85;
+          transition: all 0.5s ease;
+          z-index: 1;
+  }
+
+  nav img {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    margin-left: 215px;
+    margin-bottom: 300vh;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background:  #05031b;
+    color: white;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .fa-instagram {
+    background:  #05031b;
+    color: white;
+    top: 0;
+    font-size: 20px;
+  }
+
+  nav ul{
+    float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 5px 15px;
+
+  }
+
+
+
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 10px;
+    padding: 5px 4px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+
+
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(220,52,52);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+  }
+
+  nav ul li a:hover{
+    border-radius: 4px;
+    transition: all 0.2s ease0;
+    color: rgb(220,52,52);
+
+  }
+
+
+
+  .cta {
+
+    padding: 9px 15px;
+    background-color: rgb(220,52,52);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    right: 0;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 11px;
+
+  }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  label #btn,
+  label #cancel{
+    color: red;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  #check{
+    display: none;
+  }
+  @media (max-width: 1025px){
+    nav {
+      height: 10vh;
+      background: #05031b;
+      opacity: 0.85;
+            transition: all 0.5s ease;
+            z-index: 1;
+    }
+
+    nav img {
+      height: 80px;
+      width: 80px;
+      margin-left: 20px;
+      margin-top: 10px;
     }
 
     .social-media-icons {
       position: absolute;
-      top: 2.8vh;
       left: 0;
+      font-size: 50px;
+      margin-left: 215px;
+      margin-bottom: 300vh;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-youtube {
+      background:  #05031b;
+      color: white;
+      margin-top: 0px;
       font-size: 20px;
-      margin-left: 110px;
     }
+
+    .fa-instagram {
+      background:  #05031b;
+      color: white;
+      top: 0;
+      font-size: 20px;
+    }
+
+    nav ul{
+      float: right;
+    margin-right: 5px;
+    margin-top: 20px;
+
+    }
+
+    nav ul li{
+      display: inline-block;
+      line-height: 50px;
+      margin: 5px 15px;
+
+    }
+
+
+
     nav ul li a{
-      font-size: 12px;
-    }
-    nav ul li2 a{
-      font-size: 12px;
-    }
+      position: relative;
+      color: white;
+      font-size:9px;
+      padding: 5px 4px;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
     }
 
-@media (max-width: 900px) {
-        nav img{
-          left: 0px;
-          margin-left: 10px;
-          top:20px;
-          width: 90px;
-        }
-        .social-media-icons {
-          position: absolute;
-          top: 2.8vh;
-          left: 0;
-          font-size: 20px;
-          margin-left: 110px;
-        }
 
-        nav ul li a{
-          font-size: 11.3px;
-        }
-        nav ul li2 a{
-          font-size: 11.3px;
-        }
-        }
 
-@media (max-width: 860px) {
+    nav ul li a:before{
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 100%;
+      background: rgb(220,52,52);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .4s linear;
+    }
+
+    nav ul li a:hover:before{
+      transform: scaleX(1);
+      transform-origin: left;
+
+
+    }
+
+    nav ul li a:hover{
+      border-radius: 4px;
+      transition: all 0.2s ease0;
+      color: rgb(220,52,52);
+
+    }
+
+
+
+    .cta {
+
+      padding: 9px 15px;
+      background-color: rgb(220,52,52);
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: #edf0f1;
+      right: 0;
+      margin-left: 10px;
+      text-decoration: none;
+      font-size: 11px;
+
+    }
+
+    .cta:hover {
+      background-color: rgba(0, 136, 169, 0.8);
+    }
+
+    label #btn,
+    label #cancel{
+      color: red;
+      font-size: 30px;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+
+    }
+
+    #check{
+      display: none;
+    }
+
+  @media (max-width: 1015px){
+    nav {
+      height: 10vh;
+      background: #05031b;
+      opacity: 0.85;
+            transition: all 0.5s ease;
+            z-index: 1;
+    }
+
+    nav img {
+      height: 80px;
+      width: 80px;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .social-media-icons {
+      position: absolute;
+      left: 0;
+      font-size: 50px;
+      margin-left: 215px;
+      margin-bottom: 300vh;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-youtube {
+      background: #05031b;
+      color: white;
+      margin-top: 0px;
+      font-size: 20px;
+    }
+
+    .fa-instagram {
+      background:  #05031b;
+      color: white;
+      top: 0;
+      font-size: 20px;
+    }
+
+    nav ul{
+      float: right;
+    margin-right: 5px;
+    margin-top: 20px;
+
+    }
+
+    nav ul li{
+      display: inline-block;
+      line-height: 50px;
+      margin: 5px 15px;
+
+    }
+
+
+
+    nav ul li a{
+      position: relative;
+      color: white;
+      font-size:8px;
+      padding: 5px 4px;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+    }
+
+
+
+    nav ul li a:before{
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 100%;
+      background: rgb(220,52,52);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .4s linear;
+    }
+
+    nav ul li a:hover:before{
+      transform: scaleX(1);
+      transform-origin: left;
+
+
+    }
+
+    nav ul li a:hover{
+      border-radius: 4px;
+      transition: all 0.2s ease0;
+      color: rgb(220,52,52);
+
+    }
+
+
+
+    .cta {
+
+      padding: 9px 15px;
+      background-color: rgb(220,52,52);
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: #edf0f1;
+      right: 0;
+      margin-left: 10px;
+      text-decoration: none;
+      font-size: 11px;
+
+    }
+
+    .cta:hover {
+      background-color: rgba(0, 136, 169, 0.8);
+    }
+
+    label #btn,
+    label #cancel{
+      color: red;
+      font-size: 30px;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+
+    }
+
+    #check{
+      display: none;
+    }
+
+@media (max-width: 935px) {
       label #btn{
         display: block;
+        margin-top: 10px;
+        opacity: 0.7
 
 
       }
+
 
       ul{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #313840;
-        top: 7.9vh;
+        background: #05031b;
+        top: 7.7vh;
         left: 100%;
         text-align: center;
         transition:  all .7s
@@ -322,44 +3055,44 @@ label #cancel{
         line-height: 30px;
 
       }
-      nav ul li2{
-        display: block;
-      text-align: center;
-      padding: 1.5rem;
-      list-style: none;
-      margin: 2rem auto;
-      border-radius: 4px;
-      width: 50%;
-      background: #4ad9e4;
-      text-decoration: none;
-      color: #ffffff;
-      padding-bottom: 1.5rem;
-      font-size: 20px;
+      .cta{
+        padding: 15px 25px;
+        background-color: rgb(220,52,52);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        color: #edf0f1;
+        text-decoration: none;
+        margin-right: 70px;
 
 
 
+      }
+      .fa-youtube {
+        color: transparent;
+      }
+
+      .fa-instagram {
+        color: transparent;
       }
       nav ul li a{
         font-size: 20px;
       }
-      nav ul li2 a{
+      .cta{
 
       font-size: 20px;
 
       }
       nav img{
         left: 0px;
-        margin-left: 10px;
-        top:20px;
-        width: 130px;
+        margin-left: 20px;
+        top: 0;
+        width: 80px;
       }
-      .social-media-icons {
-        position: absolute;
-        top: 2.9vh;
-        left: 0;
-        font-size: 30px;
-        margin-left: 160px;
-      }
+
 
       #check:checked ~ ul{
         left: 0;
@@ -370,6 +3103,8 @@ label #cancel{
       }
       #check:checked ~ label #cancel{
         display: block;
+        margin-top: 10px;
+        opacity: 0.7
       }
 }
 

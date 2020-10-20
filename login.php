@@ -126,31 +126,14 @@
 			</form>
 
 
-		<form class="form-signup" action="login.inc.php" method="post">
-			<?php
-			if (isset($_GET['error'])) {
-				if ($_GET['error'] == "emptyfields") {
-					echo '<p class="signuperror"> Preencha todos os campos!</p>';
-				} else if($_GET['error'] == "invalidemail"){
-					echo '<p class="signuperror">Por favor introduza um email válido!</p>';
-				}
-				else if($_GET['error'] == "invalidUser"){
-					echo '<p class="signuperror">Por favor introduza um Usuário válido!</p>';
-				}
-				else if($_GET['error'] == "passwordsdonotmatch"){
-					echo '<p class="signuperror">As duas senhas não combinam!</p>';
-				}
-			}
-			else if ($_GET['signup'] == "success"){
-				echo '<p class="signupsucess">Utilizador registado com sucesso</p>';
-			}?>
+		<form class="signup-form" action="signup.inc.php" method="post">
       	<div class="register">
         	<div class="input_field">
-          	<input type="text" name="uid" placeholder="Usuário" class="input" required>
-        		<input type="text" name="mail" placeholder="Email" class="input" required>
+          	<input type="text" name="name" placeholder="Usuário" class="input" required>
+						<input type="email" name="mail" placeholder="Email" class="input" required>
         		<input type="password" name="pwd" placeholder="Senha" class="input" required>
-						<input type="password" name="pwd-repeat" placeholder="Repita a sua Senha" class="input" required>
-						<button type="submit" class="btn" name="signup-submit">Registrar</button>
+						<input type="password" name="pwdrepeat" placeholder="Repita a sua Senha" class="input" required>
+						<button type="submit" class="btn" name="submit">Registrar</button>
 			</div>
 
 

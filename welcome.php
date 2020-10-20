@@ -30,6 +30,7 @@
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <body>
 
+
       <nav>
         <div class="logo">
 
@@ -37,13 +38,13 @@
         <img src="logo-solo.png" alt="logo">
         </div>
 
-        
+
 
 
         <ul class="nav-links">
           <li ><a href="#home">Home<a></li>
           <li><a href="#quem-somos"> Quem somos</a></li>
-          <li class=""><a href="#operations" >Onde Atuamos</a></li>
+          <li class=""><a href="#onde-atuamos" >Onde Atuamos</a></li>
           <li><a href="#servicos" >Serviços<a></li>
           <li><a href="#Depoimentos">Depoimentos<a></li>
           <li><a href="#Comecando" >Começando<a></li>
@@ -56,7 +57,7 @@
         <a href="https://www.youtube.com/channel/UCuf2KhhA8Ub3hcSgfaziiDw" class="fa fa-youtube" target="_blank"></a>
           </div>
 
-          <a class="cta" href="login.php" key="login">Acessar</a>
+          <a class="cta" onclick="openLoginForm()">Acessar</a>
 
           <script type="text/javascript">
 
@@ -93,6 +94,10 @@
 
 
 
+
+
+
+
           <section class="container3" id="home">
             <h1><strong>Bem-vindo à MMT UNIVERSITY<strong><h1>
                 <h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>
@@ -118,13 +123,62 @@
               Encaramos trading não apenas como uma profissão, mas como uma paixão.<br>
               Paixão por fazer o que amamos e da liberdade de podermos operar de qualquer lugar.  </h1>
 
+              <h2><b> Uma plataforma intuitiva, <br>
+                  com conteudos de qualidade e<br>
+                  comprometida com seu aprendizando.</b><br></h2>
+                <p>Conteudos e ferramentas completas para voce<br>
+                  se tornar um trader profissinal.</p>
+
+
+          </section>
+          <section class="container4" id="onde-atuamos">
+            <h1>Mercado Forex</h1>
+            <p>Forex e o mercado onde vários ativos diferentes são negociadas. O mercado<br>
+                Forex e o maior e mais liquido mercado do mundo com uma movimentação<br>
+                de trilhões de dólares diariamente. Nesse mercado podem ser negociados<br>
+                pares de moedas (EUR/USD, USD/JPY, EUR/GBP, etc.), commodities (OURO,<br>
+                PRATA, US OLEO, etc.) - essas duas categorias como nossa especialidade,<br>
+                além de índices (DOW JONES, S&P 500, NASDAQ, BOVESPA, etc.), e<br>
+                criptomoedas (BITCOIN, LITECOIN, ETHEREUM, etc.).<br>
+                Por ser um mercado de alta liquidez, há também uma grande quantidade de<br>
+                corretoras disponíveis para traders. Com essa vasta seleção de opções, nos<br>
+                da MMT University, apenas fazemos parcerias com aquelas corretoras que<br>
+                são regulamentadas, seguras, e com taxas e comissões competitivas com as<br>
+                demais. Dessa maneira, aqui abaixo estão as nossas parceiras<br></p>
+
+            <h1> Opções Binárias</h1>
+            <p>Opções Binarias é uma subdivisão do mercado forex, sendo assim é possível<br>
+              operar todos os ativos que são operados no mercado forex, usando uma<br>
+              metodologia de estudo diferente. Ésta modalidade requer um baixo valor de<br>
+              investimento inicial, o que a torna uma ótima opção para iniciantes.<br>
+              Em Opções Binarias Temos como parceira a maior e mais renomada<br>
+              corretora da modalidade , porque a MMT UNIVERSITY se preocupa que seus<br>
+              alunos tenham disponiveis o maior acervo de ferramentas para facilitar suas<br>
+              analises, uma plataforma de negociação intuitiva e fácil de manusear, alem<br>
+              da tranquilidade de saber que seu capital esta seguro.<br>
+              Abaixo abaixo está a nossa parceira.</p>
+          </section>
+
+          <section class="container5" id="servicos">
+            <h1>Serviços</h1>
+            <ul>
+              <li>- VIDEO AULAS</li>
+              <li>- LIVES DIARIAS (ANALISE DO MERCADO)</li>
+              <li>- LIVES SEMANAIS (PARA DUVIDAS)</li>
+              <li>- LIVES SEMANAIS (RESTROSPECTIVA DO MERCADO)</li>
+              <li>- SALA DE SINAIS</li>
+              <li>- MATERIAIS DIDATICOS</li>
+              <li>- FERRAMENTAS DE AUXILIO</li>
+              <li>- PREMIAÇÃO POR DESEMPENHO (MENSAL)</li>
+              <li>- PROGRAMA DE TALENTOS</li>
+            </ul>
           </section>
 
           <section class="fwh-slide6" id="operations">
             <img src="onde-atuamos.png">
           </section>
 
-        <section class="fwh-slide3" id="servicos">
+        <section class="fwh-slide3" id="servico">
           <img src="servicos.png">
         </section>
 
@@ -136,33 +190,7 @@
           <img src="comecando.png">
         </section>
 
-        <section class="container4" id="onde atuamos">
-          <h1>Mercado Forex</h1>
-          <p>Forex e o mercado onde vários ativos diferentes são negociadas. O mercado<br>
-              Forex e o maior e mais liquido mercado do mundo com uma movimentação<br>
-              de trilhões de dólares diariamente. Nesse mercado podem ser negociados<br>
-              pares de moedas (EUR/USD, USD/JPY, EUR/GBP, etc.), commodities (OURO,<br>
-              PRATA, US OLEO, etc.) - essas duas categorias como nossa especialidade,<br>
-              além de índices (DOW JONES, S&P 500, NASDAQ, BOVESPA, etc.), e<br>
-              criptomoedas (BITCOIN, LITECOIN, ETHEREUM, etc.).<br>
-              Por ser um mercado de alta liquidez, há também uma grande quantidade de<br>
-              corretoras disponíveis para traders. Com essa vasta seleção de opções, nos<br>
-              da MMT University, apenas fazemos parcerias com aquelas corretoras que<br>
-              são regulamentadas, seguras, e com taxas e comissões competitivas com as<br>
-              demais. Dessa maneira, aqui abaixo estão as nossas parceiras<br></p>
 
-          <h1> Opções Binárias</h1>
-          <p>Opções Binarias é uma subdivisão do mercado forex, sendo assim é possível<br>
-            operar todos os ativos que são operados no mercado forex, usando uma<br>
-            metodologia de estudo diferente. Ésta modalidade requer um baixo valor de<br>
-            investimento inicial, o que a torna uma ótima opção para iniciantes.<br>
-            Em Opções Binarias Temos como parceira a maior e mais renomada<br>
-            corretora da modalidade , porque a MMT UNIVERSITY se preocupa que seus<br>
-            alunos tenham disponiveis o maior acervo de ferramentas para facilitar suas<br>
-            analises, uma plataforma de negociação intuitiva e fácil de manusear, alem<br>
-            da tranquilidade de saber que seu capital esta seguro.<br>
-            Abaixo abaixo está a nossa parceira.</p>
-        </section>
 
 
 

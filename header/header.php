@@ -1,66 +1,38 @@
-<head>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navbar</title>
     <link rel="stylesheet" href="header.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
+  <body>
+    <nav>
 
 
+      <input type="checkbox"id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+          <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <img src="logo-solo.png" >
+      <ul>
+      <li><a href="#"> Home</a></li>
+      <li><a href="#">Quem somos</a></li>
+      <li><a href="#">Onde  Atuamos</a></li>
+      <li><a href="#">Servicos</a></li>
+      <li><a href="#">Depoimentos</a></li>
+      <li><a href="#">comecando</a></li>
+      <li><a href="#">Contacte-nos</a></li>
+      <a  href="https://www.instagram.com/mmtuniversity_oficial/" class="fab fa-instagram"  target="_blank"></a>
+      <a href="https://www.youtube.com/channel/UCuf2KhhA8Ub3hcSgfaziiDw" class="fab fa-youtube" target="_blank"></a>
+      <a class="cta"  key="login">Acessar</a>
 
 
-            <nav>
-              <div class="logo">
+    </ul>
 
-                <div class="social-media-icons">
-                <a href="https://www.instagram.com/mmtuniversity_oficial/" class="fa fa-instagram" target="_blank"></a>
+   </nav>
 
-
-
-              <a href="https://www.youtube.com/channel/UCuf2KhhA8Ub3hcSgfaziiDw" class="fa fa-youtube" target="_blank"></a>
-                </div>
-              <img src="mmt-white.png" alt="logo">
-              </div>
-
-
-              <ul class="nav-links">
-                <li ><a href="#about">Home<a></li>
-                <li class="active"><a href="#operations" >Onde Atuamos</a></li>
-                <li><a href="#servicos" >Serviços<a></li>
-                <li><a href="#Depoimentos">Depoimentos<a></li>
-                <li><a href="#Comecando" >Começando<a></li>
-                <li><a href="#sac">Contacte-nos<a></li>
-                </ul>
-
-                <a class="cta" href="login.php" key="login">Acessar</a>
-
-                <script type="text/javascript">
-
-                  $("a").click(function() {
-                    $("a").css("background-color","");
-                    $(this).css("background-color", "black");
-                  });
-
-                </script>
-
-
-
-
-            <div class="burger">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-
-            </div>
-            </nav>
-            <script src="mobile.js"></script>
-            <script type="text/javascript">
-                    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                          anchor.addEventListener('click', function (e) {
-                          e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-    });
-  });
-
-            </script>
+  </body>
+</html>

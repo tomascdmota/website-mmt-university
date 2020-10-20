@@ -1,67 +1,46 @@
 <?php
 
-if (isset($_POST['login-submit'])) {
-  require 'db_connection.php';
 
-  $mailuid = $_POST['mailuid'];
-  $password = $_POST['pwd'];
-  $query = mysqli_query($conn, $sql);
+if (isset($_POST["submit"])) {
+  // code...
 
-  if (empty($mailuid) || empty($password)) {
-    header("Location: login.php?error=emptyfields");
+  $name = $_POST["name"];
+  $email = $_POST["mail"];
+  $pwd = $_POST["pwd"];
+  $pwdRepeat = $_POST["pwdrepeat"];
+
+  require_once 'db_connection.php';
+  require_once 'functions.php';
+
+  if (emptyInputSignup($name, $email, $pwd, $pwdRepeat) !== false) {
+    header("location: login.php?error=emptyinput");
     exit();
   }
-  else {
-    $sql = "SELECT * FROM users WHERE uidUsers=? OR emailUsers=?;";
-    $stmt = mysqli_stmt_init($conn);
-    if (!mysqli_stmt_prepare($stmt, $sql)) {
-      header("Location: login.php?error=sqlerror");
-      exit();
-    }
-    else {
-      mysqli_stmt_bind_param($stmt, "ss", $mailuid, $mailuid);
-      mysqli_stmt_execute($stmt);
-      $result = mysqli_stmt_get_result($stmt);
-
-      if ($row = mysqli_fetch_assoc($result)) {
-        $pwdCheck = password_verify($password, $row['pwdUsers']);
-
-        while ($row = mysqli_fetch_array($query)) {
-          $vkey         = $row['vkey'];
-          $verified     = $row['verified'];
-        }
-        if ($pwdCheck == false) {
-          header("Location: login.php?error=wrongpwd");
-          exit();
-        }
-        else if($pwdCheck == true &&  $verified == '1') {
-          session_start();
-          $_SESSION['userId'] = $row['idUsers'];
-          $_SESSION['userUid'] = $row['uidUsers'];
-          $_SESSION['vkey']  = $vkey;
-          $_SESSION['verified'] = $verified;
-          header("Location: mainpage.php?login=success");
-          exit();
-
-
-
-        }
-        else {
-          header("Location: login.php?error=wrongpwd");
-          $verificationRequiredErr = '<div class="alert alert-danger">
-                            Tem quer verificar a conta antes de acessar.
-                        </div>';
-          exit();
-        }
-      }
-      else {
-        header("Location: login.php?error=nouser");
-        exit();
-      }
+  if (invalidUid($username) !== false) {
+    header("location: login.php?error=invalidUid");
+    exit();
   }
+
+  if (invalidEmail($email) !== false) {
+    header("location: login.php?error=invalidEmail");
+    exit();
+  }
+
+
+  if (pwdMatch($pwd, $pwdRepeat) !== false) {
+    header("location: login.php?error=pwddontmatch");
+    exit();
+  }
+
+  if (uidExists($conn, $username) !== false) {
+    header("location: login.php?error=usernameTaken");
+    exit();
+  }
+
+
+  createUser($conn, $name, $email,$pwd);
 }
-}
-else {
-  header("Location: mainpage.php?login=success");
-  exit();
-}
+  else {
+    header("location: mainpage.php");
+    exit();
+  }
