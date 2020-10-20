@@ -23,61 +23,38 @@
         <script type="text/javascript" src="main.js"></script>
         <script type="text/javascript" src="nav.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
-      </head>
-
-        </script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+
     <body>
 
 
       <nav>
-        <div class="logo">
 
 
-        <img src="logo-solo.png" alt="logo">
-        </div>
-
-
-
-
-        <ul class="nav-links">
-          <li ><a href="#home">Home<a></li>
-          <li><a href="#quem-somos"> Quem somos</a></li>
-          <li class=""><a href="#onde-atuamos" >Onde Atuamos</a></li>
-          <li><a href="#servicos" >Serviços<a></li>
-          <li><a href="#Depoimentos">Depoimentos<a></li>
-          <li><a href="#Comecando" >Começando<a></li>
-          <li><a href="#sac" >Contact-enos<a></li>
-          </ul>
-
-          <div class="social-media-icons">
-          <a href="https://www.instagram.com/mmtuniversity_oficial/" class="fa fa-instagram" target="_blank"></a>
-
+        <input type="checkbox"id="check">
+        <label for="check">
+          <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <img src="logo-solo.png" >
+        <ul>
+        <li><a href="#home"> Home</a></li>
+        <li><a href="#quem-somos">Quem somos</a></li>
+        <li><a href="#onde-atuamos">Onde  Atuamos</a></li>
+        <li><a href="#servicos">Servicos</a></li>
+        <li><a href="#Depoimentos">Depoimentos</a></li>
+        <li><a href="#Comecando">comecando</a></li>
+        <li><a href="#sac">Contacte-nos</a></li>
+        <a  href="https://www.instagram.com/mmtuniversity_oficial/" class="fa fa-instagram"  target="_blank"></a>
         <a href="https://www.youtube.com/channel/UCuf2KhhA8Ub3hcSgfaziiDw" class="fa fa-youtube" target="_blank"></a>
-          </div>
-
-          <a class="cta" onclick="openLoginForm()">Acessar</a>
-
-          <script type="text/javascript">
-
-            $("a").click(function() {
-              $("a").css("background-color","");
-              $(this).css("background-color", "black");
-            });
-
-          </script>
+        <a class="cta" key="login">Acessar</a>
 
 
+      </ul>
 
-
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-
-      </div>
-      </nav>
+     </nav>
       <script src="mobile.js"></script>
       <script type="text/javascript">
               document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -91,9 +68,6 @@
         });
 
       </script>
-
-
-
 
 
 
@@ -174,13 +148,7 @@
             </ul>
           </section>
 
-          <section class="fwh-slide6" id="operations">
-            <img src="onde-atuamos.png">
-          </section>
 
-        <section class="fwh-slide3" id="servico">
-          <img src="servicos.png">
-        </section>
 
         <section class="fwh-slide4" id="Depoimentos">
           <img src="depoimentos.png">
