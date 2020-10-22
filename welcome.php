@@ -25,10 +25,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
       </head>
 
     <body>
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
       <nav>
 
@@ -49,13 +52,21 @@
         <li><a href="#sac">Contacte-nos</a></li>
         <a  href="https://www.instagram.com/mmtuniversity_oficial/" class="fa fa-instagram"  target="_blank"></a>
         <a href="https://www.youtube.com/channel/UCuf2KhhA8Ub3hcSgfaziiDw" class="fa fa-youtube" target="_blank"></a>
-        <a class="cta" key="login">Acessar</a>
+        <a class="cta"  rel="modal:open" href="#ex1" key="login" id="myBtn">Acessar</a>
 
 
       </ul>
 
      </nav>
-      <script src="mobile.js"></script>
+
+
+  
+
+
+
+
+
+
       <script type="text/javascript">
               document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                     anchor.addEventListener('click', function (e) {
@@ -68,6 +79,7 @@
         });
 
       </script>
+
 
 
 
@@ -107,30 +119,40 @@
           </section>
           <section class="container4" id="onde-atuamos">
             <h1>Mercado Forex</h1>
-            <p>Forex e o mercado onde vários ativos diferentes são negociadas. O mercado<br>
-                Forex e o maior e mais liquido mercado do mundo com uma movimentação<br>
-                de trilhões de dólares diariamente. Nesse mercado podem ser negociados<br>
-                pares de moedas (EUR/USD, USD/JPY, EUR/GBP, etc.), commodities (OURO,<br>
-                PRATA, US OLEO, etc.) - essas duas categorias como nossa especialidade,<br>
-                além de índices (DOW JONES, S&P 500, NASDAQ, BOVESPA, etc.), e<br>
-                criptomoedas (BITCOIN, LITECOIN, ETHEREUM, etc.).<br>
-                Por ser um mercado de alta liquidez, há também uma grande quantidade de<br>
-                corretoras disponíveis para traders. Com essa vasta seleção de opções, nos<br>
-                da MMT University, apenas fazemos parcerias com aquelas corretoras que<br>
-                são regulamentadas, seguras, e com taxas e comissões competitivas com as<br>
-                demais. Dessa maneira, aqui abaixo estão as nossas parceiras<br></p>
+            <p>Forex e o mercado onde vários ativos diferentes são negociadas. O mercado Forex e o maior e mais<br>
+                liquido mercado do mundo com uma movimentação de trilhões de dólares diariamente. <br>
+                Nesse mercado podem ser negociados pares de moedas (EUR/USD, USD/JPY, EUR/GBP, etc.), <br>
+                commodities (OURO,PRATA, US OLEO, etc.) - essas duas categorias como nossa especialidade,<br>
+                além de índices (DOW JONES, S&P 500, NASDAQ, BOVESPA, etc.), e criptomoedas (BITCOIN, LITECOIN, ETHEREUM, etc.).<br>
+                Por ser um mercado de alta liquidez, há também uma grande quantidade de corretoras disponíveis para traders.<br>
+                 Com essa vasta seleção de opções, nos da MMT University, apenas fazemos parcerias com<br>
+                 aquelas corretoras que   são regulamentadas, seguras, e com taxas e comissões competitivas com<br>
+                as demais. Dessa maneira, aqui abaixo estão as nossas parceiras<br></p>
+
+
+              <div class="relative">
+                <button type="button" class="btnfxtm">
+                <div id="btn_container"><img src="btfxtm.png"></div>
+              </button>
+              <button type="button" class="btnicmarkets">
+              <div id="btn_container"><img src="bticmarkets.png"></div>
+            </button>
+
+            <button type="button" class="btnoanda">
+            <div id="btn_container"><img src="btoanda.png"></div>
+          </button>
+          </div>
+
 
             <h1> Opções Binárias</h1>
-            <p>Opções Binarias é uma subdivisão do mercado forex, sendo assim é possível<br>
-              operar todos os ativos que são operados no mercado forex, usando uma<br>
-              metodologia de estudo diferente. Ésta modalidade requer um baixo valor de<br>
-              investimento inicial, o que a torna uma ótima opção para iniciantes.<br>
-              Em Opções Binarias Temos como parceira a maior e mais renomada<br>
-              corretora da modalidade , porque a MMT UNIVERSITY se preocupa que seus<br>
-              alunos tenham disponiveis o maior acervo de ferramentas para facilitar suas<br>
-              analises, uma plataforma de negociação intuitiva e fácil de manusear, alem<br>
-              da tranquilidade de saber que seu capital esta seguro.<br>
+            <p>Opções Binarias é uma subdivisão do mercado forex, sendo assim é possível operar todos os ativos que são operados<br>
+              no mercado forex, usando uma metodologia de estudo diferente. Ésta modalidade requer um baixo valor de<br>
+              investimento inicial, o que a torna uma ótima opção para iniciantes.   Em Opções Binarias Temos<br>
+              como parceira a maior e mais renomadacorretora da modalidade , porque a MMT UNIVERSITY se preocupa que seus<br>
+              alunos tenham disponiveis o maior acervo de ferramentas para facilitar suas analises, uma plataforma de negociação<br>
+              intuitiva e fácil de manusear, alem da tranquilidade de saber que seu capital esta seguro.<br>
               Abaixo abaixo está a nossa parceira.</p>
+
           </section>
 
           <section class="container5" id="servicos">
@@ -150,12 +172,10 @@
 
 
 
-        <section class="fwh-slide4" id="Depoimentos">
-          <img src="depoimentos.png">
+        <section class="container6" id="Depoimentos">
         </section>
 
-        <section class="fwh-slide5" id="Comecando">
-          <img src="comecando.png">
+        <section class="container7" id="Comecando">
         </section>
 
 

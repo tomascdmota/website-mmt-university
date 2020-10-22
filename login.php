@@ -9,145 +9,58 @@
   <link rel="icon" href="logo-black.png" type="image/xpng">
 	<link rel="stylesheet" href="style.css">
 
-
-
-	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-
-	<script>
-		$(document).ready(function(){
-			$(".login").hide();
-			$(".register_li").addClass("active");
-
-			$(".login_li").click(function(){
-			  $(this).addClass("active");
-			  $(".register_li").removeClass("active");
-			  $(".login").show();
-			   $(".register").hide();
-			})
-
-			$(".register_li").click(function(){
-			  $(this).addClass("active");
-			  $(".login_li").removeClass("active");
-			  $(".register").show();
-			   $(".login").hide();
-			})
-		});
-	</script>
 </head>
-
-
-
 <body>
-	<section class="fwh-slide" >
-		<img src="login-background.png">
-	</section>
-	<nav>
-		<div class="logo">
-			<img src="mmt-white.png" alt="logo">
-		</div>
-
-		<ul class="nav-links">
-			<li><a href="welcome.php">Home<a></li>
-			<li><a href="/servicos">Servicos<a></li>
-			<li><a href="/Depoimentos">Depoimentos<a></li>
-			<li><a href="/Comecando">Comecando<a></li>
-			<li><a href="/sac">Contacte-nos<a></li>
-			</ul>
-
-			<a class="cta" href="login.php">Acessar</a>
-
-	<div class="burger">
-		<div class="line1"></div>
-		<div class="line2"></div>
-		<div class="line3"></div>
-
-	</div>
-	</nav>
-	<script src="mobile.js"></script>
-
-	<div class="container">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 
 
-  <div class="wrapper">
+<div id="myModal">
+<div class="container" id="container">
+<div class="form-container sign-up-container">
+<form action="#">
+<h1>MMT University</h1>
+<span>Se registre para começar</span>
+<input type="text" placeholder="Usuário" />
+<input type="email" placeholder="Email" />
+<input type="password" placeholder="Senha" />
+<input type="password" placeholder="Repita a sua senha" />
+<button>Registrar</button>
+</form>
+</div>
+<div class="form-container sign-in-container">
+<form action="#">
+<h1>Acessar</h1>
 
-      <div class="left">
-        <h3>Bem vindo!</h3>
-        <img src="logo-solo.png" alt="logo2">
-      </div>
+<span>Acesse a MMT University</span>
+<input type="email" placeholder="Email" />
+<input type="password" placeholder="Senha" />
+<a href="#">Esqueceu a senha?</a>
+<button>Acessar</button>
+</form>
+</div>
+<div class="overlay-container">
+<div class="overlay">
+<div class="overlay-panel overlay-left">
+  <h1>Bem vindo!</h1>
+  <p>Para continuar aprendendo, acesse a sua conta!</p>
+  <button class="ghost" id="signIn">Sign In</button>
+</div>
+<div class="overlay-panel overlay-right">
+  <h1>MMT University!</h1>
+  <p>Se registre para entrar na melhor universidade trading do mundo.</p>
+  <button class="ghost" id="signUp">Registre-se</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="main.js"></script>
+<script src="modal.js"></script>
 
-
-      <div class="right">
-        <div class="tabs">
-          <ul>
-          <li class="login_li"> Acessar </li>
-          <li class="register_li"> Registrar</li>
-        </ul>
-      </div>
-
-
-
-			<form class="form-signup" action="signup.inc.php" method="post">
-
-				<?php
-				if (isset($_GET['error'])) {
-					if ($_GET['error'] == "emptyfields") {
-						echo '<p class="signuperror"> Preencha todos os campos!</p>';
-					} else if($_GET['error'] == "wrongpwd"){
-						echo '<p class="signuperror"> A sua senha está errada!</p>';
-					}
-					else if($_GET['error'] == "nouser"){
-						echo '<p class="signuperror">Não existe ninguém cadastrado com esse Email/Usuário!</p>';
-					}
-
-				}
-			?>
-      		<div class="login">
-        	<div class="input_field">
-          	<input type="text" name="mailuid" placeholder="Email/Username" class="input" required>
-        </div>
-        <div class="input_field">
-          <input type="password" name="pwd" placeholder="Senha" class="input" required>
-        	</div>
-					<button type="submit" class="btn" name="login-submit">Acessar</button>
-					<button type="submit" class="btn" name=""><a href="reset-password.php" style="text-decoration:none;">Esqueci a minha senha</a></button>
-					<?php
-						if(isset($_GET["newpwd"])){
-							if($_GET["newpwd"] == "passwordupdated"){
-								echo '<p class="signupsucess">A sua senha foi reposta!</p>';
-							}
-						}
-					 ?>
-
-
-
-      	</div>
-
-			</form>
-
-
-		<form class="signup-form" action="signup.inc.php" method="post">
-      	<div class="register">
-        	<div class="input_field">
-          	<input type="text" name="name" placeholder="Usuário" class="input" required>
-						<input type="email" name="mail" placeholder="Email" class="input" required>
-        		<input type="password" name="pwd" placeholder="Senha" class="input" required>
-						<input type="password" name="pwdrepeat" placeholder="Repita a sua Senha" class="input" required>
-						<button type="submit" class="btn" name="submit">Registrar</button>
-			</div>
-
-
-      			</div>
-
-				</form>
-
-			</div>
-
-		</div>
-
-	</div>
-
-
+<button href="#ex1" rel="modal:open" id="myBtn">Acessar</button>
 	</body>
 
 </html>
