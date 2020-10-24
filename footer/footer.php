@@ -28,7 +28,7 @@
 <a href="login.php">Acessar</a>
 </p>
 
-<p class="footer-company-name">MMT University &copy; 2020</p>
+
 </div>
 
 <div class="footer-center">
@@ -65,6 +65,11 @@ A MMT foi criada para ensinar qualquer pessoa a investir no mercado.
 <a href="#"><i class="fa fa-github"></i></a>
 
 </div>
+
+<div class="footer-company-name">
+  <p class="footer-company-name-p">MMT University &copy; 2020</p>
+</div>
+
 
 </div>
 

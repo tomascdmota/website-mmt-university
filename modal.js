@@ -1,17 +1,16 @@
+//Get the modal
 var modal = document.getElementById("myModal");
-modal.style.display = "none";
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
 
+var modal_container  = document.getElementById("modalContainer")
+modal_container.style.display = "none";
 
 
 window.onclick = function (event) {
+  console.log(event.target)
   if(event.target.id == "myBtn") {
-    modal.style.display = "block";
-    btn.style.display = 'none'
+    modal_container.style.display = "flex"
   }
   else if (modal !== event.target && !modal.contains(event.target)) {
-    modal.style.display = "none";
-    btn.style.display = 'block'
+    modal_container.style.display = "none";
   }
 }

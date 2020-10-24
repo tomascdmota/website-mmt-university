@@ -27,7 +27,7 @@
 <input type="email" placeholder="Email" />
 <input type="password" placeholder="Senha" />
 <input type="password" placeholder="Repita a sua senha" />
-<button>Registrar</button>
+<button name="submit">Registrar</button>
 </form>
 </div>
 <div class="form-container sign-in-container">

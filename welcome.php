@@ -13,27 +13,27 @@
 
 
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <title>MMT University</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="welcome-style.css">
-        <link rel="icon" href="logo-black.png" type="image/xpng">
-        <script src="jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="main.js"></script>
-        <script type="text/javascript" src="nav.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      </head>
+      <head>
+       <meta charset="utf-8">
+       <title>MMT University</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="welcome-style.css">
+       <link rel="icon" href="logo-black.png" type="image/xpng">
+       <script src="jquery-3.5.1.min.js"></script>
+       <script type="text/javascript" src="nav.js"></script>
+       <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+
+     </head>
+
 
     <body>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
       <nav>
+        <div class="menu-center">
 
 
         <input type="checkbox"id="check">
@@ -43,8 +43,8 @@
         </label>
         <img src="logo-solo.png" >
         <ul>
-        <li><a href="#home"> Home</a></li>
-        <li><a href="#quem-somos">Quem somos</a></li>
+        <li><a href="#home" class="active" > Home</a></li>
+        <li><a href="#quem-somos" >Quem somos</a></li>
         <li><a href="#onde-atuamos">Onde  Atuamos</a></li>
         <li><a href="#servicos">Servicos</a></li>
         <li><a href="#Depoimentos">Depoimentos</a></li>
@@ -52,15 +52,16 @@
         <li><a href="#sac">Contacte-nos</a></li>
         <a  href="https://www.instagram.com/mmtuniversity_oficial/" class="fa fa-instagram"  target="_blank"></a>
         <a href="https://www.youtube.com/channel/UCuf2KhhA8Ub3hcSgfaziiDw" class="fa fa-youtube" target="_blank"></a>
-        <a class="cta"  rel="modal:open" href="#ex1" key="login" id="myBtn">Acessar</a>
+         <a class="cta" rel="modal:open" key="login" id="myBtn">Acessar</a>
 
 
       </ul>
-
+</div>
      </nav>
+     <script src="scroll.js"></script>
 
 
-  
+
 
 
 
@@ -95,6 +96,7 @@
             </section>
 
           <section class="container2" id="quem-somos">
+            <h3><u class="underline">Que</u>m somos</h3>
 
             <h1>Bem-vindo a MMT University, a mais completa Universidade de Traders.<br>
               Atuamos no mercado há mais de 3 anos e ajudamos mais de 5 mil pessoas a mudarem de vida.<br>
@@ -109,16 +111,16 @@
               Encaramos trading não apenas como uma profissão, mas como uma paixão.<br>
               Paixão por fazer o que amamos e da liberdade de podermos operar de qualquer lugar.  </h1>
 
-              <h2><b> Uma plataforma intuitiva, <br>
-                  com conteudos de qualidade e<br>
-                  comprometida com seu aprendizando.</b><br></h2>
+              <h2><b> Uma plataforma intuitiva, com conteudos<br>
+                   de qualidade e comprometida com
+                 seu aprendizando.<br></h2>
                 <p>Conteudos e ferramentas completas para voce<br>
                   se tornar um trader profissinal.</p>
 
 
           </section>
           <section class="container4" id="onde-atuamos">
-            <h1>Mercado Forex</h1>
+            <h1><strong>Forex</strong></h1>
             <p>Forex e o mercado onde vários ativos diferentes são negociadas. O mercado Forex e o maior e mais<br>
                 liquido mercado do mundo com uma movimentação de trilhões de dólares diariamente. <br>
                 Nesse mercado podem ser negociados pares de moedas (EUR/USD, USD/JPY, EUR/GBP, etc.), <br>
@@ -130,18 +132,15 @@
                 as demais. Dessa maneira, aqui abaixo estão as nossas parceiras<br></p>
 
 
-              <div class="relative">
-                <button type="button" class="btnfxtm">
-                <div id="btn_container"><img src="btfxtm.png"></div>
-              </button>
-              <button type="button" class="btnicmarkets">
-              <div id="btn_container"><img src="bticmarkets.png"></div>
-            </button>
 
-            <button type="button" class="btnoanda">
-            <div id="btn_container"><img src="btoanda.png"></div>
-          </button>
-          </div>
+
+
+          <div class="relative">
+           <button class="btnfxtm"><img src="btfxtm.png"></button>
+           <button class="btnicmarkets"><img src="bticmarkets.png"></button>
+           <button class="btnoanda"><img src="btoanda.png"></button>
+       </p>
+   </div>
 
 
             <h1> Opções Binárias</h1>
@@ -153,26 +152,39 @@
               intuitiva e fácil de manusear, alem da tranquilidade de saber que seu capital esta seguro.<br>
               Abaixo abaixo está a nossa parceira.</p>
 
+              <div class="relative">
+                <button class="iqoptions"><img src="btiq.png"></button>
+
+              </div>
+
           </section>
 
           <section class="container5" id="servicos">
-            <h1>Serviços</h1>
+            <h1><u class="underline">Ser</u>viços </h1>
+
+
             <ul>
-              <li>- VIDEO AULAS</li>
-              <li>- LIVES DIARIAS (ANALISE DO MERCADO)</li>
-              <li>- LIVES SEMANAIS (PARA DUVIDAS)</li>
-              <li>- LIVES SEMANAIS (RESTROSPECTIVA DO MERCADO)</li>
-              <li>- SALA DE SINAIS</li>
-              <li>- MATERIAIS DIDATICOS</li>
-              <li>- FERRAMENTAS DE AUXILIO</li>
-              <li>- PREMIAÇÃO POR DESEMPENHO (MENSAL)</li>
-              <li>- PROGRAMA DE TALENTOS</li>
+              <div class="x">
+              <li><a href="#">VIDEO AULAS</a></li>
+              <li><a href="#">LIVES DIARIAS (ANALISE DO MERCADO)</a></li>
+              <li><a href="#">LIVES SEMANAIS (PARA DUVIDAS)</a></li>
+              <li><a href="#">LIVES SEMANAIS (RESTROSPECTIVA DO MERCADO)</a></li>
+              <li><a href="#">SALA DE SINAIS</a></li>
+              <li><a href="#">MATERIAIS DIDATICOS</a></li>
+              <li><a href="#">FERRAMENTAS DE AUXILIO</a></li>
+              <li><a href="#">PREMIAÇÃO POR DESEMPENHO (MENSAL)</a></li>
+              <li><a href="#">PROGRAMA DE TALENTOS</a></li>
+              </div>
             </ul>
+
           </section>
 
 
 
         <section class="container6" id="Depoimentos">
+          <iframe width="900" height="600"
+          src="https://www.youtube.com/embed/watch?v=aOJXqaL26hs">
+        </iframe>
         </section>
 
         <section class="container7" id="Comecando">
@@ -187,7 +199,7 @@
 
 
 
-                <section class="container" id="sac">
+                <section class="container-sac" id="sac">
 
 
                 <div class="contact-form">
@@ -213,6 +225,51 @@
                 </div>
                 </section>
 
+
+
+
+<div class="modal-container" id="modalContainer">
+       <div class="container" id="myModal">
+         <div class="form-container sign-up-container">
+           <form action="#">
+             <h1>MMT University</h1>
+             <span>Se registre para começar</span>
+             <input type="text" placeholder="Usuário" />
+             <input type="email" placeholder="Email" />
+             <input type="password" placeholder="Senha" />
+             <input type="password" placeholder="Repita a sua senha" />
+             <button>Registrar</button>
+           </form>
+         </div>
+         <div class="form-container sign-in-container">
+           <form action="#">
+             <h1>Acessar</h1>
+
+             <span>Acesse a MMT University</span>
+             <input type="email" placeholder="Email" />
+             <input type="password" placeholder="Senha" />
+             <a href="#">Esqueceu a senha?</a>
+             <button>Acessar</button>
+           </form>
+         </div>
+         <div class="overlay-container">
+           <div class="overlay">
+             <div class="overlay-panel overlay-left">
+               <h1>Bem vindo!</h1>
+               <p>Para continuar aprendendo, acesse a sua conta!</p>
+               <button class="ghost" id="signIn">Acessar</button>
+             </div>
+             <div class="overlay-panel overlay-right">
+               <h1>MMT University!</h1>
+               <p>Se registre para entrar na melhor universidade trading do mundo.</p>
+               <button class="ghost" id="signUp">Registre-se</button>
+             </div>
+           </div>
+         </div>
+     </div>
+   </div>
+   <script src="main.js"></script>
+   <script src="modal.js"></script>
 
     </body>
 
