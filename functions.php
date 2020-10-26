@@ -50,7 +50,7 @@ function uidExists($conn, $username, $email){
   $stmt = mysqli_stmt_init($conn);
 
   if (!mysqli_stmt_prepare($stmt, $sql)) {
-    header("location signup.php?error=stmtfailed");
+    header("location welcome.php?error=stmtfailed");
     exit();
     // code...
   }
@@ -79,7 +79,7 @@ function createUser($conn, $name, $email, $username, $pwd){
   $stmt = mysqli_stmt_init($conn);
 
   if (!mysqli_stmt_prepare($stmt, $sql)) {
-    header("location signup.php?error=stmtfailed");
+    header("location welcome.php?error=stmtfailed");
     exit();
   }
 

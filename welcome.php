@@ -182,10 +182,13 @@
 
 
         <section class="container6" id="Depoimentos">
+          <h1> <strong>Veja o que a nossa familia<br>acha sobre nos.</strong></h1>
+
           <iframe width="900" height="600"
           src="https://www.youtube.com/embed/watch?v=aOJXqaL26hs">
         </iframe>
-        </section>
+
+  </section>
 
         <section class="container7" id="Comecando">
         </section>
@@ -231,20 +234,19 @@
 <div class="modal-container" id="modalContainer">
        <div class="container" id="myModal">
          <div class="form-container sign-up-container">
-           <form action="#">
+           <form action="signup.inc.php">
              <h1>MMT University</h1>
              <span>Se registre para começar</span>
-             <input type="text" placeholder="Usuário" />
-             <input type="email" placeholder="Email" />
-             <input type="password" placeholder="Senha" />
-             <input type="password" placeholder="Repita a sua senha" />
-             <button>Registrar</button>
+             <input type="text" name="uid" placeholder="Usuário" />
+             <input type="email" name="mail" placeholder="Email" />
+             <input type="password" name="pwd" placeholder="Senha"/>
+             <input type="password" name="pwd-repeat" placeholder="Repita a sua senha" />
+             <button type="submit" name="signup-submit">Registrar</button>
            </form>
          </div>
          <div class="form-container sign-in-container">
            <form action="#">
              <h1>Acessar</h1>
-
              <span>Acesse a MMT University</span>
              <input type="email" placeholder="Email" />
              <input type="password" placeholder="Senha" />

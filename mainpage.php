@@ -1,11 +1,5 @@
 <?php
-session_start();
-require 'db_connection.php';
-require 'login.inc.php';
-if( isset($_SESSION['uidUsers'])) {
-  $user_id = $_SESSION['uidUsers'];
-  $user = in_array_r($user_id,$user);
-}
+
  ?>
 
 
