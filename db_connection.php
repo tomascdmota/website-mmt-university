@@ -1,8 +1,8 @@
 <?php
 $hostname = "localhost";
 $dbname ="univemmt_database";
-$Username ="root";
-$Password = "";
+$Username ="univemmt_root";
+$Password = "root1234";
 
 
 $conn = mysqli_connect($hostname, $Username, $Password, $dbname);

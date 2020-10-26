@@ -25,7 +25,6 @@
        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
 
      </head>
 
@@ -237,15 +236,16 @@
            <form action="signup.inc.php">
              <h1>MMT University</h1>
              <span>Se registre para começar</span>
-             <input type="text" name="uid" placeholder="Usuário" />
-             <input type="email" name="mail" placeholder="Email" />
+             <input type="text" name="name" placeholder="Usuário" />
+             <input type="email" name="email" placeholder="Email" />
+             <input type="text" name="uid" placeholder="Nome completo" />
              <input type="password" name="pwd" placeholder="Senha"/>
-             <input type="password" name="pwd-repeat" placeholder="Repita a sua senha" />
-             <button type="submit" name="signup-submit">Registrar</button>
+             <input type="password" name="pwdrepeat" placeholder="Repita a sua senha" />
+             <button type="submit" name="submit">Registrar</button>
            </form>
          </div>
          <div class="form-container sign-in-container">
-           <form action="#">
+           <form action="login.inc.php">
              <h1>Acessar</h1>
              <span>Acesse a MMT University</span>
              <input type="email" placeholder="Email" />
