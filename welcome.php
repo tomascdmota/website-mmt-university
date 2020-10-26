@@ -1,11 +1,12 @@
 <?php
   session_start();
-  if(isset($_SESSION['userId'])){
+  if(isset($_SESSION['useruid'])){
     header("Location: mainpage.php?login=success");
     exit();
   }
   else {
-
+    header("location: welcome.php");
+    exit();
   }
 
 
@@ -233,7 +234,7 @@
 <div class="modal-container" id="modalContainer">
        <div class="container" id="myModal">
          <div class="form-container sign-up-container">
-           <form action="signup.inc.php">
+           <form action="signup.inc.php" method="POST">
              <h1>MMT University</h1>
              <span>Se registre para começar</span>
              <input type="text" name="name" placeholder="Usuário" />
@@ -243,15 +244,40 @@
              <input type="password" name="pwdrepeat" placeholder="Repita a sua senha" />
              <button type="submit" name="submit">Registrar</button>
            </form>
+
+           <?php
+            if (isset(($_GET["error"]))) {
+              if ($_GET["error"] == "emptyInput") {
+                echo "</p>Preencha todos os campos</a>";
+              } else if ($_GET["error"]=="invalidUid") {
+                echo "</p>Escolha um nome apropriado</p>";
+              }
+              else if ($_GET["error"]=="invalidEmail") {
+               echo "</p>Escolha um email apropriado</p>";
+             }
+             else if ($_GET["error"]=="passwordsdontmatch") {
+              echo "</p>As senhas não coincidem</p>";
+            }
+            else if ($_GET["error"]=="stmtfailed") {
+             echo "</p>Tente novamente</p>";
+           }
+           else if ($_GET["error"]=="usernameTaken") {
+            echo "</p>Esse nome já foi usado por outro usuário</p>";
+          }
+          else if ($_GET["error"]=="none") {
+           echo "</p>Bem vindo!</p>";
+         }
+            }
+            ?>
          </div>
          <div class="form-container sign-in-container">
-           <form action="login.inc.php">
+           <form action="login.inc.php" method="POST">
              <h1>Acessar</h1>
              <span>Acesse a MMT University</span>
-             <input type="email" placeholder="Email" />
-             <input type="password" placeholder="Senha" />
+             <input type="uid" placeholder="Email/Usuario" />
+             <input type="pwd" placeholder="Senha" />
              <a href="#">Esqueceu a senha?</a>
-             <button>Acessar</button>
+             <button name="submit">Acessar</button>
            </form>
          </div>
          <div class="overlay-container">

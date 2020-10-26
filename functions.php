@@ -44,7 +44,7 @@ function pwdMatch($pwd, $pwdRepeat){
 
 
 function uidExists($conn, $username, $email){
-  $sql = "SELECT * FROM users WHERE usersUid = ? OR users = ?;";
+  $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";
   $stmt = mysqli_stmt_init($conn);
 
   if (!mysqli_stmt_prepare($stmt, $sql) ) {
@@ -95,4 +95,40 @@ function createUser($conn, $name, $email, $username, $pwd){
     header("location: mainpage.php?error=none");
     exit();
 
+}
+
+
+
+function emptyInputLogin($username, $password){
+  $result;
+  if (empty($username) || empty($password)) {
+    $result = true;
+  } else {
+    $result = false;
+  }
+  return $result;
+
+}
+
+function loginUser($conn, $username, $pwd) {
+  $uidExists = uidExists($conn, $username, $username);
+
+  if ($uidExists === false) {
+    header("location: welcome.php?error=wronglogin");
+    exit();
+  }
+
+  $pwdHashed = $uidExists["usersPwd"];
+  $checkPwd = password_verify($pwd, $pwdHashed);
+
+  if ($checkPwd === false) {
+    header("location: welcome.php?error=wronglogin");
+    exit();
+  } else if($checkPwd === true){
+    session_start();
+    $_SESSION["userid"] = $uidExists["usersId"] ;
+    $_SESSION["useruid"] = $uidExists["usersUid"] ;
+    header("location: mainpage.php");
+    exit();
+  }
 }

@@ -1,5 +1,5 @@
 <?php
-
+  session_start();
  ?>
 
 
@@ -34,7 +34,7 @@
                         <ul>
                             <li><a href="#"><i class="fas fa-search"></i></a></li>
                             <li><a href="#"><i class="fas fa-bell"></i></a></li>
-                            <li><a href="#"><i class="fas fa-power-off"></i></a></li>
+                            <li><a href="logout.inc.php"><i class="fas fa-power-off"></i></a></li>
                         </ul>
                     </div>
                 </div>
