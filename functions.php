@@ -99,9 +99,15 @@ function createUser($conn, $name, $email, $username, $pwd){
 
 
 
+<<<<<<< HEAD
 function emptyInputLogin($username, $pwd){
   $result;
   if (empty($username) || empty($pwd)) {
+=======
+function emptyInputLogin($username, $password){
+  $result;
+  if (empty($username) || empty($password)) {
+>>>>>>> 0390a603a7be7c50ddad275f7a654cec59115016
     $result = true;
   } else {
     $result = false;

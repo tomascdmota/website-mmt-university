@@ -1,6 +1,17 @@
 <?php
   session_start();
+<<<<<<< HEAD
 
+=======
+  if(isset($_SESSION['useruid'])){
+    header("Location: mainpage.php?login=success");
+    exit();
+  }
+  else {
+    header("location: welcome.php");
+    exit();
+  }
+>>>>>>> 0390a603a7be7c50ddad275f7a654cec59115016
 
 
 ?>
@@ -285,10 +296,17 @@
            <form action="login.inc.php" method="POST">
              <h1>Acessar</h1>
              <span>Acesse a MMT University</span>
+<<<<<<< HEAD
              <input type="name" name="uid" placeholder="Email/Usuario" />
              <input type="password" name="pwd" placeholder="Senha" />
              <a href="#">Esqueceu a senha?</a>
              <button type="submit" name="submit">Acessar</button>
+=======
+             <input type="uid" placeholder="Email/Usuario" />
+             <input type="pwd" placeholder="Senha" />
+             <a href="#">Esqueceu a senha?</a>
+             <button name="submit">Acessar</button>
+>>>>>>> 0390a603a7be7c50ddad275f7a654cec59115016
            </form>
          </div>
          <div class="overlay-container">
