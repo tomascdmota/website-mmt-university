@@ -1,12 +1,6 @@
 <?php
   session_start();
-  if(isset($_SESSION['userId'])){
-    header("Location: mainpage.php?login=success");
-    exit();
-  }
-  else {
 
-  }
 
 
 ?>
@@ -25,7 +19,6 @@
        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
 
      </head>
 
@@ -96,13 +89,13 @@
             </section>
 
           <section class="container2" id="quem-somos">
-            <h3><u class="underline">Que</u>m somos</h3>
+            <h3><u class="underline">Que</u>m Somos</h3>
 
             <h1>Bem-vindo a MMT University, a mais completa Universidade de Traders.<br>
               Atuamos no mercado há mais de 3 anos e ajudamos mais de 5 mil pessoas a mudarem de vida.<br>
               Aqui pessoas de todos os lugares do mundo se encontram para aprender e trocar experiências <br>
               sobre as diversas encontram para aprender e trocar experiências sobre as diversas<br>
-              modalidades do mercado financeiro. <br><br>
+              modalidades do mercado financeiro. <br><br>
 
               Na MMT University consideramos todos como parte de uma família e apoiamos um aos outros<br>
               para nos tornarmos traders melhores e mais consistentes a cada dia.<br>
@@ -120,7 +113,8 @@
 
           </section>
           <section class="container4" id="onde-atuamos">
-            <h1><strong>Forex</strong></h1>
+            <h1><u class="underline">Ond</u>e Atuamos</h1>
+            <h2><strong>Forex</strong></h2>
             <p>Forex e o mercado onde vários ativos diferentes são negociadas. O mercado Forex e o maior e mais<br>
                 liquido mercado do mundo com uma movimentação de trilhões de dólares diariamente. <br>
                 Nesse mercado podem ser negociados pares de moedas (EUR/USD, USD/JPY, EUR/GBP, etc.), <br>
@@ -136,14 +130,12 @@
 
 
           <div class="relative">
-           <button class="btnfxtm"><img src="btfxtm.png"></button>
-           <button class="btnicmarkets"><img src="bticmarkets.png"></button>
-           <button class="btnoanda"><img src="btoanda.png"></button>
-       </p>
+           <button class="btnfxtm"><a href="https://www.forextime.com/?partner_id=4938735" target="_blank"/><img src="btfxtm.png"></button>
+           <button class="btnicmarkets"><a href="https://www.icmarkets.com/?camp=52632" target="_blank"/><img src="bticmarkets.png"></button>
    </div>
 
 
-            <h1> Opções Binárias</h1>
+            <h2> Opções Binárias</h2>
             <p>Opções Binarias é uma subdivisão do mercado forex, sendo assim é possível operar todos os ativos que são operados<br>
               no mercado forex, usando uma metodologia de estudo diferente. Ésta modalidade requer um baixo valor de<br>
               investimento inicial, o que a torna uma ótima opção para iniciantes.   Em Opções Binarias Temos<br>
@@ -153,7 +145,7 @@
               Abaixo abaixo está a nossa parceira.</p>
 
               <div class="relative">
-                <button class="iqoptions"><img src="btiq.png"></button>
+                <button class="iqoptions"><img src="btiq.png"><a href="https://affiliate.iqbroker.com/redir/?aff=146896" target="_blank"></a></button>
 
               </div>
 
@@ -163,30 +155,49 @@
             <h1><u class="underline">Ser</u>viços </h1>
 
 
-            <ul>
-              <div class="x">
-              <li><a href="#">VIDEO AULAS</a></li>
-              <li><a href="#">LIVES DIARIAS (ANALISE DO MERCADO)</a></li>
-              <li><a href="#">LIVES SEMANAIS (PARA DUVIDAS)</a></li>
-              <li><a href="#">LIVES SEMANAIS (RESTROSPECTIVA DO MERCADO)</a></li>
-              <li><a href="#">SALA DE SINAIS</a></li>
-              <li><a href="#">MATERIAIS DIDATICOS</a></li>
-              <li><a href="#">FERRAMENTAS DE AUXILIO</a></li>
-              <li><a href="#">PREMIAÇÃO POR DESEMPENHO (MENSAL)</a></li>
-              <li><a href="#">PROGRAMA DE TALENTOS</a></li>
-              </div>
-            </ul>
+
+              <div class="btn-group">
+              <button>VIDEO AULAS</button>
+              <button>LIVES DIARIAS <br><div class="btn-group-ls">(ANALISE DO MERCADO)</div></button>
+              <button>SALA DE SINAIS</button>
+            </div>
+                <div class="btn-group2">
+              <button>LIVES SEMANAIS <br><div class="btn-group-ls">(RESTROSPECTIVA DO MERCADO)</div></button>
+              <button >LIVES SEMANAIS <br><div class="btn-group-ls">(PARA DUVIDAS)</button>
+              <button>MATERIAIS DIDATICOS</button></div>
+              <div class="btn-group3">
+              <button>FERRAMENTAS DE <br>AUXILIO</button>
+              <button>PREMIAÇÃO POR <br>DESEMPENHO</button>
+              <button>PROGRAMA DE TALENTOS</button>
+            </div>
+
+           <div class="adic">
+             <h1> Serviços adicionais</h1>
+           </div>
+           <div class="forex">
+             <h1>Robôs forex</h1>
+             <p>saiba mais</p>
+           </div>
+
+           <div class="mentoria">
+               <h3>mentoria individual</h3>
+               <p>saiba mais</p>
+           </div>
+
+            <h4>programa de afiliados<br> saiba mais</h4>
 
           </section>
 
 
 
         <section class="container6" id="Depoimentos">
-          <h1> <strong>Veja o que a nossa familia<br>acha sobre nos.</strong></h1>
 
-          <iframe width="900" height="600"
+
+          <iframe width="625" height="390"
           src="https://www.youtube.com/embed/watch?v=aOJXqaL26hs">
         </iframe>
+        <h1> <strong>Veja o que a nossa familia<br>acha sobre nos.</strong></h1>
+
 
   </section>
 
@@ -234,24 +245,50 @@
 <div class="modal-container" id="modalContainer">
        <div class="container" id="myModal">
          <div class="form-container sign-up-container">
-           <form action="signup.inc.php">
+           <form action="signup.inc.php" method="POST">
              <h1>MMT University</h1>
              <span>Se registre para começar</span>
-             <input type="text" name="uid" placeholder="Usuário" />
-             <input type="email" name="mail" placeholder="Email" />
+             <input type="text" name="name" placeholder="Usuário" />
+             <input type="email" name="email" placeholder="Email" />
+             <input type="text" name="uid" placeholder="Nome completo" />
              <input type="password" name="pwd" placeholder="Senha"/>
-             <input type="password" name="pwd-repeat" placeholder="Repita a sua senha" />
-             <button type="submit" name="signup-submit">Registrar</button>
+             <input type="password" name="pwdrepeat" placeholder="Repita a sua senha" />
+             <button type="submit" name="submit">Registrar</button>
            </form>
+
+           <?php
+            if (isset(($_GET["error"]))) {
+              if ($_GET["error"] == "emptyInput") {
+                echo "</p>Preencha todos os campos</a>";
+              } else if ($_GET["error"]=="invalidUid") {
+                echo "</p>Escolha um nome apropriado</p>";
+              }
+              else if ($_GET["error"]=="invalidEmail") {
+               echo "</p>Escolha um email apropriado</p>";
+             }
+             else if ($_GET["error"]=="passwordsdontmatch") {
+              echo "</p>As senhas não coincidem</p>";
+            }
+            else if ($_GET["error"]=="stmtfailed") {
+             echo "</p>Tente novamente</p>";
+           }
+           else if ($_GET["error"]=="usernameTaken") {
+            echo "</p>Esse nome já foi usado por outro usuário</p>";
+          }
+          else if ($_GET["error"]=="none") {
+           echo "</p>Bem vindo!</p>";
+         }
+            }
+            ?>
          </div>
          <div class="form-container sign-in-container">
-           <form action="#">
+           <form action="login.inc.php" method="POST">
              <h1>Acessar</h1>
              <span>Acesse a MMT University</span>
-             <input type="email" placeholder="Email" />
-             <input type="password" placeholder="Senha" />
+             <input type="name" name="uid" placeholder="Email/Usuario" />
+             <input type="password" name="pwd" placeholder="Senha" />
              <a href="#">Esqueceu a senha?</a>
-             <button>Acessar</button>
+             <button type="submit" name="submit">Acessar</button>
            </form>
          </div>
          <div class="overlay-container">

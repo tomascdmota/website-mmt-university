@@ -9,7 +9,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        <title>Sidebar Dashboard Template With Sub Menu</title>
+        <title>MMT University</title>
         <link rel="stylesheet" href="style-mainpage.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
@@ -34,7 +34,7 @@
                         <ul>
                             <li><a href="#"><i class="fas fa-search"></i></a></li>
                             <li><a href="#"><i class="fas fa-bell"></i></a></li>
-                            <li><a href="#"><i class="fas fa-power-off"></i></a></li>
+                            <li><a href="logout.inc.php"><i class="fas fa-power-off"></i></a></li>
                         </ul>
                     </div>
                 </div>
