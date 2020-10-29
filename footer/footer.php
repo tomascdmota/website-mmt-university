@@ -2,6 +2,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="footer/footer.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
 
@@ -59,10 +60,9 @@ A MMT foi criada para ensinar qualquer pessoa a investir no mercado.
 
 <div class="footer-icons">
 
-<a href="#"><i class="fa fa-facebook"></i></a>
-<a href="#"><i class="fa fa-twitter"></i></a>
-<a href="https://www.instagram.com/mmtuniversity_oficial/" target="_blank"><i class="fa fa-linkedin"></i></a>
-<a href="#"><i class="fa fa-github"></i></a>
+
+<a  href="https://www.instagram.com/mmtuniversity_oficial/" class="fa fa-instagram"  target="_blank"></a>
+<a href="https://www.youtube.com/channel/UCuf2KhhA8Ub3hcSgfaziiDw" class="fa fa-youtube" target="_blank"></a>
 
 </div>
 

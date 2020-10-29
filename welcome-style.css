@@ -826,13 +826,6 @@ input {
 
 
 
-.container6 {
-  background-image: url(".svg");
-  height: 110vh;
-  background-size: cover;
-  position: ;
-  overflow: auto;
-}
 
 
 
@@ -844,13 +837,33 @@ input {
   overflow: auto;
 
 }
+.container-sac h1 {
+  margin-top: 0;
+  font-weight: 200;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  color: white;
+  font-family: sans-serif;
+  font-size: 60px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50px;
+  color: #fff;
+}
+
+.container-sac .underline{
+  padding-top: 20px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  border-bottom: 5px solid rgb(220,52,52);
+}
+
 
 .contact-form {
-  height: 85vh;
+  height: 100vh;
   max-width: 30vw;
-  position: inherit;
-  margin-top: 10vh;
-  margin-left: 10vh;
+  position:  absolute;
+  margin-top: 5vh;
+  margin-left: 10vw;
   padding: 50px 30px;
   box-sizing: border-box;
   border-radius: 8px;
@@ -861,21 +874,13 @@ input {
 }
 
 
-.contact-form h1 {
-  margin-top: 0;
-  font-weight: 200;
-  margin: 5px;
-  color: white;
-  font-family: sans-serif;
-  font-size: 60px;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-}
+
+
 .contact-form p {
   margin-top: 20px;
   font-weight: 50;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   margin-bottom: 50px;
@@ -884,16 +889,15 @@ input {
 .txtb{
   border-radius: 10px solid white;
   margin: 5px 0;
-  margin-bottom: 50px;
-  padding: 8px 12px;
+  margin-bottom: 6vh;
+  padding: 3px 12px;
   border-radius: 8px;
   background: #fff;
 }
 .txtbm{
   border-radius: 10px solid white;
-  margin: 20px 0;
   margin-bottom: 50px;
-  padding: 20px 18px;
+  padding: 40px 18px;
   border-radius: 8px;
   background: #fff;
 }
@@ -911,10 +915,8 @@ input {
   border: none;
   background: none;
   outline: none;
-  font-size: 20px;
-  margin-top: 12px;
+  font-size: 14px;
   color: #332e2e;
-  margin-left: 5px;
   padding-bottom: 13px;
 }
 
@@ -925,6 +927,7 @@ input {
   text-transform: uppercase;
   font-size: 14px;
   top: 0;
+  margin-top: 10vh;
 }
 
 .txtbm input{
@@ -932,18 +935,15 @@ input {
   border: none;
   background: none;
   outline: none;
-  font-size: 20px;
-  margin-top: 4px;
+  font-size: 16px;
   color: #332e2e;
-  margin-left: 8px;
   padding-bottom: 60px;
-
 }
 
 
 .btn{
   display: block;
-  background:#FFBF0D;
+  background:rgb(220,52,52);
   padding: 12px 0;
   color: white;
   font-size: 25px;
@@ -954,7 +954,7 @@ input {
   margin-top: 8px;
   width: 40%;
   border-radius: 10px;
-  margin-left: 5vw;
+  margin-left: 7vw;
 }
 
 
@@ -1720,7 +1720,7 @@ display:flex; justify-content: left; align-items: center;
 }
 
 .container5 .adic{
-  margin-top: 4.5vh;
+  margin-top: 2vh;
   margin-left: 14vw;
 }
 
@@ -1731,27 +1731,37 @@ display:flex; justify-content: left; align-items: center;
   text-transform: uppercase;
 }
 
-.container5 .forex{
-  top: 0;
-  margin-left: 19vw;
+.container5 .btn-group4 {
+  margin-left: 15vw;
+  margin-top: 5vh;
+  text-align: center;
+  display:flex; justify-content: left; align-items: center;
 }
-.container5 .forex h1{
-  font-size: 20px;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
+
+.container5 .btn-group4 button {
+    color: white;
+    border: none;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    position: relative;
+    height: 7vh;
+    width: 18vw;
+    background-color: #05031b;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    margin-right: 1vw;
+    margin-left: 3vw;
 }
-.container5 .mentoria{
-  margin-left: 40vw;
-  margin-bottom: 10vh;
+.container5 .btn-group4 button .sm-red {
+  color: rgb(220,52,52);
+  font-size: 16px;
 }
-.container5 .mentoria h1{
-  font-size: 20px;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 50vh;
-}
+
+
+
 
 
 
@@ -1773,20 +1783,47 @@ display:flex; justify-content: left; align-items: center;
 
 .container6 iframe{
   margin-left: 53vw;
-  margin-bottom: 10vh;
-  margin-top: 5vh;
+  margin-bottom: 3vh;
+  margin-top: 9vh;
 }
 
 .container6 h1 {
   margin: auto;
-  line-height: 60px;
-  vertical-align: middle;
-  margin-left: 5vh;
+  line-height: 50px;
+  vertical-align: top;
+  margin-left: 10vh;
   font-size: 55px;
-  color:  rgb(220,52,52);
+  font-weight: bold;
+  color: #05031b;
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
+  position: relative;
+  top: -22vh;
 }
+
+.container6 h2 {
+  line-height: 50px;
+  vertical-align: top;
+  font-size: 45px;
+  color: #05031b;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  margin-right: 75vw;
+  margin-top: 5vh;
+  padding-top: 10vh;
+}
+
+
+.container6 .underline{
+  padding-top: 20px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  border-bottom: 5px solid rgb(220,52,52);
+}
+
+
+
 
 .container7 {
     background-image: url("comecando.svg");
@@ -1795,4 +1832,25 @@ display:flex; justify-content: left; align-items: center;
     background-size: contain;
     background-repeat: no-repeat;
     left: 0;
+}
+
+
+.container7 .underline {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  border-bottom: 5px solid rgb(220,52,52);
+}
+
+
+.container7 h1 {
+  margin: auto;
+  line-height: 30px;
+  vertical-align: middle;
+  margin-left: 10vh;
+  weight: 950;
+  padding-top: 10vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50px;
+  color: #000;
 }

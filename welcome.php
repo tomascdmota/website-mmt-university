@@ -1,17 +1,6 @@
 <?php
   session_start();
-<<<<<<< HEAD
 
-=======
-  if(isset($_SESSION['useruid'])){
-    header("Location: mainpage.php?login=success");
-    exit();
-  }
-  else {
-    header("location: welcome.php");
-    exit();
-  }
->>>>>>> 0390a603a7be7c50ddad275f7a654cec59115016
 
 
 ?>
@@ -183,36 +172,32 @@
             </div>
 
            <div class="adic">
-             <h1> Serviços adicionais</h1>
-           </div>
-           <div class="forex">
-             <h1>Robôs forex</h1>
-             <p>saiba mais</p>
+             <h1>Serviços adicionais</h1>
            </div>
 
-           <div class="mentoria">
-               <h3>mentoria individual</h3>
-               <p>saiba mais</p>
-           </div>
+             <div class="btn-group4">
+             <button>Robôs forex <br><div class="sm-red">saiba mais</div></button>
 
-            <h4>programa de afiliados<br> saiba mais</h4>
-
+             <button>mentoria individual <br> <div class="sm-red">saiba mais</div></button>
+             <button>programa de afiliados<br> <div class="sm-red">saiba mais</div></button>
+          </div>
           </section>
 
 
 
         <section class="container6" id="Depoimentos">
 
-
-          <iframe width="625" height="390"
+          <h2><u class="underline">Dep</u>oimentos</h2>
+          <iframe width="590" height="350"
           src="https://www.youtube.com/embed/watch?v=aOJXqaL26hs">
         </iframe>
-        <h1> <strong>Veja o que a nossa familia<br>acha sobre nos.</strong></h1>
+        <h1> <strong>Veja o que os alunos <br>falam da universidade.</strong></h1>
 
 
   </section>
 
         <section class="container7" id="Comecando">
+          <h1><u class="underline">Com</u>ecando</h1>
         </section>
 
 
@@ -226,9 +211,9 @@
 
                 <section class="container-sac" id="sac">
 
-
+                  <h1><u class="underline">Aten</u>dimento</h1>
                 <div class="contact-form">
-                  <h1>Atendimento</h1>
+
                   <p>Tire todas as suas dúvidas enviando uma mensagem e <br>nós responderemos dentro de 48h. A equipe MMT.</p>
                   <div class="txtb">
                     <input type="text" name="" value="" placeholder="Introduza o seu nome">
@@ -296,17 +281,10 @@
            <form action="login.inc.php" method="POST">
              <h1>Acessar</h1>
              <span>Acesse a MMT University</span>
-<<<<<<< HEAD
              <input type="name" name="uid" placeholder="Email/Usuario" />
              <input type="password" name="pwd" placeholder="Senha" />
              <a href="#">Esqueceu a senha?</a>
              <button type="submit" name="submit">Acessar</button>
-=======
-             <input type="uid" placeholder="Email/Usuario" />
-             <input type="pwd" placeholder="Senha" />
-             <a href="#">Esqueceu a senha?</a>
-             <button name="submit">Acessar</button>
->>>>>>> 0390a603a7be7c50ddad275f7a654cec59115016
            </form>
          </div>
          <div class="overlay-container">
