@@ -19,7 +19,8 @@
        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+       rel="stylesheet">
      </head>
 
 
@@ -188,7 +189,7 @@
         <section class="container6" id="Depoimentos">
 
           <h2><u class="underline">Dep</u>oimentos</h2>
-          <iframe width="590" height="350"
+          <iframe 
           src="https://www.youtube.com/embed/watch?v=aOJXqaL26hs">
         </iframe>
         <h1> <strong>Veja o que os alunos <br>falam da universidade.</strong></h1>
@@ -198,6 +199,115 @@
 
         <section class="container7" id="Comecando">
           <h1><u class="underline">Com</u>ecando</h1>
+          <div class="packages">
+
+
+          <div class="mensal">
+            <h1><strong>Mensal</strong></h1>
+            <p>NO PROGRAMA DE AFILIAÇÃO MMT <br>
+                UNIVERSITY A CADA 3 AMIGOS<br>
+                INDICADOS PARA UNIVERSIDADE VC<br>
+                GANHA O VALOR DE $50,00 DE<br>
+                COMISSÃO RECORRENTE (DIANTE<br>
+                 A RENOVAÇÃO DOS MESMOS).</p>
+                 <div class="check-list">
+                   <span class="material-icons">check_circle</span>
+                   <p><strong>Acesso a todos os conteudos</strong></p>
+
+                   <div class="check-list">
+                     <span class="material-icons">check_circle</span>
+                     <p><strong>Programa de afiliados</strong></p>
+                   </div>
+                 </div>
+                 <div class="check-list">
+                   <span class="material-icons">check_circle</span>
+                   <p><strong>Materiais exclusivos</strong></p>
+                 </div>
+                 <div class="check-list">
+                   <span class="material-icons">check_circle</span>
+                   <p><strong>1 mês de acesso </strong></p>
+                 </div>
+                 <h2> $50</h2>
+                 <button>Contratar</button>
+               </div>
+
+
+          <div class="semestral">
+            <h1><strong>Semestral</strong></h1>
+            <p>NO PROGRAMA DE AFILIAÇÃO<br>
+              NO PROGRAMA DE AFILIAÇÃO<br>
+               MMT UNIVERSITY, A CADA PACOTE<br>
+              SEMESTRAL INDICADO A UM AMIGO(A)<br>
+               VOCE GANHA O VALOR DE $79,00 DE<br>
+              COMISSÃO RECORRENTE (DIANTE<br>
+               A RENOVAÇÃO DO MESMO).</p>
+                 <div class="check-list">
+                   <span class="material-icons">check_circle</span>
+                   <p><strong>Acesso a todos os conteudos</strong></p>
+
+                   <div class="check-list">
+                     <span class="material-icons">check_circle</span>
+                     <p><strong>Programa de afiliados</strong></p>
+                   </div>
+                 </div>
+                 <div class="check-list">
+                   <span class="material-icons">check_circle</span>
+                   <p><strong>Materiais exclusivos</strong></p>
+                 </div>
+                 <div class="check-list">
+                   <span class="material-icons">check_circle</span>
+                   <p><strong>Diploma trader</strong></p>
+                 </div>
+                 <div class="check-list">
+                   <span class="material-icons">check_circle</span>
+                   <p><strong>1 mês de acesso </strong></p>
+                 </div>
+
+
+            <h2><div class="overline"> $300</div></h2>
+            <h3> $240</h3>
+
+            <button>Contratar</button>
+          </div>
+
+
+
+          <div class="trimestral">
+            <h1><strong>Trimestral</strong></h1>
+
+
+            <p>NO PROGRAMA DE AFILIAÇÃO MMT<br>
+              UNIVERSITY, A CADA PACOTE SEMESTRAL <br>
+              INDICADO A UM AMIGO(A) VOCE GANHA O <br>
+              VALOR DE $45,00 DE COMISSÃO RECORRENTE <br>
+             (DIANTE A RENOVAÇÃO DO MESMO)</p>
+                 <div class="check-list">
+                   <span class="material-icons">check_circle</span>
+                   <p><strong>Acesso a todos os conteudos</strong></p>
+
+                   <div class="check-list">
+                     <span class="material-icons">check_circle</span>
+                     <p><strong>Programa de afiliados</strong></p>
+                   </div>
+                 </div>
+                 <div class="check-list">
+                   <span class="material-icons">check_circle</span>
+                   <p><strong>Materiais exclusivos</strong></p>
+                 </div>
+
+                 <div class="check-list">
+                   <span class="material-icons">check_circle</span>
+                   <p><strong>3 meses de acesso </strong></p>
+                 </div>
+
+
+            <h2><div class="overline"> $150</div></h2>
+            <h3> $135</h3>
+
+            <button>Contratar</button>
+          </div>
+          </div>
+            </div>
         </section>
 
 
