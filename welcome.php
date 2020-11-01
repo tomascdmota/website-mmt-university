@@ -19,8 +19,10 @@
        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-       rel="stylesheet">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
      </head>
 
 
@@ -189,7 +191,7 @@
         <section class="container6" id="Depoimentos">
 
           <h2><u class="underline">Dep</u>oimentos</h2>
-          <iframe 
+          <iframe
           src="https://www.youtube.com/embed/watch?v=aOJXqaL26hs">
         </iframe>
         <h1> <strong>Veja o que os alunos <br>falam da universidade.</strong></h1>
@@ -325,23 +327,24 @@
                 <div class="contact-form">
 
                   <p>Tire todas as suas dúvidas enviando uma mensagem e <br>nós responderemos dentro de 48h. A equipe MMT.</p>
+                  <form action="webform.php" method="post" class="contact-form">
                   <div class="txtb">
-                    <input type="text" name="" value="" placeholder="Introduza o seu nome">
+                    <input type="text" name="name" id="name"  placeholder="Introduza o seu nome" >
                   </div>
 
                   <div class="txtb">
-                    <input type="email" name="" value="" placeholder="Introduza o seu email">
+                    <input type="email" name="email" id="email" value="" placeholder="Introduza o seu email"required>
                   </div>
 
                   <div class="txtbm">
 
-                    <input type="text" name="message" value="" placeholder="Escreva a sua mensagem" >
+                    <input type="text" name="subject" placeholder="Escreva a sua mensagem" required>
                   </div>
                   <div>
                     <a class="btn">Enviar</a>
                   </div>
 
-
+                </form>
                 </div>
                 </section>
 
