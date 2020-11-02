@@ -16,13 +16,6 @@ body {
  font-family: 'Montserrat', sans-serif;
  height: 100%;
 }
-
-.btn-primary:hover {
-  background: rgb(220,52,52) !important;
-  border: 2px solid rgb(220,52,52) !important;
-}
-
-
 a {
   text-decoration: none;
 
@@ -590,10 +583,8 @@ a {
 
 button {
     border-radius: 20px;
-    /* border: 1px solid rgb(220,52,52); */
-    /* background-color: rgb(220,52,52); */
-    border: 0;
-    background: transparent;
+    border: 1px solid rgb(220,52,52);
+    background-color: rgb(220,52,52);
     color: #FFFFFF;
     font-size: 12px;
     font-weight: bold;
@@ -850,7 +841,7 @@ input {
   margin-top: 0;
   font-weight: 200;
   margin-top: 5vh;
-  margin-left: 1vw;
+  margin-left: 5vw;
   color: white;
   font-family: sans-serif;
   font-size: 60px;
@@ -965,7 +956,7 @@ input {
 }
 
 
-/* .btn{
+.btn{
   display: block;
   background:rgb(220,52,52);
   padding: 12px 0;
@@ -979,14 +970,14 @@ input {
   width: 40%;
   border-radius: 10px;
   margin-left: 7vw;
-} */
+}
 
 
 
 
 .container2 {
-  /* background-image: url(""); */
-  min-height: 100vh;
+  background-image: url("quem-somos.svg");
+  height: 100vh;
   width: 100vw;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1376,7 +1367,6 @@ input {
 
 .container3 {
   background-image: url("home.svg");
-  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
   background-size: contain;
@@ -1578,10 +1568,8 @@ input {
 
 .container4 {
   background-image: url("onde-atuamos.svg");
-  background-repeat: no-repeat;
   width: 100vw;
-  min-height: 100vh;
-  clear: both;
+  height: 100vh;
   background-size: contain;
   left: 0;
 }
@@ -1591,16 +1579,15 @@ input {
   padding-bottom: 10px;
   text-decoration: none;
   border-bottom: 5px solid rgb(220,52,52);
-  width: 20px;
 }
 
 
 .container4 h1 {
   margin: auto;
   line-height: 30px;
-  /* vertical-align: middle; */
+  vertical-align: middle;
   margin-left: 10vh;
-  font-weight: 700;
+  weight: 950;
   padding-top: 10vh;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50px;
@@ -1608,9 +1595,9 @@ input {
 }
 
 .container4 h2 {
-  /* margin: auto; */
+  margin: auto;
   line-height: 60px;
-  /* vertical-align: middle; */
+  vertical-align: middle;
   font-size: 34px;
   color: #130055;
   font-family: 'Source Sans Pro', sans-serif;
@@ -1619,10 +1606,10 @@ input {
 }
 
 .container4 p {
-  /* margin: auto; */
+  margin: auto;
   line-height: 30px;
-  /* vertical-align: middle; */
-  /* margin-left: 40vw; */
+  vertical-align: middle;
+  margin-left: 40vw;
   margin-top: 1vh;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
@@ -1640,18 +1627,23 @@ input {
 }
 
 
-.container4 .btn-primary {
-  /* margin-left: 50vw; */
+.container4 .btnfxtm {
+  display: inline-block;
+  position: absolute;
+  width: 15vh;
+  height: 6vh;
+  margin-left: 50vw;
   margin-top: 1vh;
   text-align: left;
   background-color:#05031b;
   border-radius: 10px;
 }
 
-.container4 .btn-primary img{
+.container4 .btnfxtm img{
   top: 0;
   height: 3vh;
-
+  margin-left: -3vh;
+  width: 100;
 }
 
 .container4 .btnicmarkets {
@@ -1774,20 +1766,24 @@ input {
     }
 
 
-    .container4 .btn-primary {
-      /* margin-left: 50vw; */
+    .container4 .btnfxtm {
+      display: inline-block;
+      position: absolute;
+      width: 15vh;
+      height: 6vh;
+      margin-left: 50vw;
       margin-top: 1vh;
       text-align: left;
       background-color:#05031b;
       border-radius: 10px;
     }
-    
-    .container4 .btn-primary img{
+
+    .container4 .btnfxtm img{
       top: 0;
       height: 3vh;
-  
+      margin-left: -3vh;
+      width: 100;
     }
-    
 
     .container4 .btnicmarkets {
       display: inline-block;
@@ -1901,8 +1897,8 @@ input {
   .container4 p {
     margin: auto;
     line-height: 35px;
-    /* vertical-align: middle; */
-    /* margin-left: 40vw; */
+    vertical-align: middle;
+    margin-left: 40vw;
     margin-top: 1vh;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 30px;
@@ -1920,20 +1916,24 @@ input {
   }
 
 
-  .container4 .btn-primary {
-    /* margin-left: 50vw; */
+  .container4 .btnfxtm {
+    display: inline-block;
+    position: absolute;
+    width: 15vh;
+    height: 6vh;
+    margin-left: 50vw;
     margin-top: 1vh;
     text-align: left;
     background-color:#05031b;
     border-radius: 10px;
   }
-  
-  .container4 .btn-primary img{
+
+  .container4 .btnfxtm img{
     top: 0;
     height: 3vh;
-
+    margin-left: -3vh;
+    width: 100;
   }
-  
 
   .container4 .btnicmarkets {
     display: inline-block;
@@ -2047,8 +2047,8 @@ input {
   .container4 p {
     margin: auto;
     line-height: 20px;
-    /* vertical-align: middle;
-    margin-left: 40vw; */
+    vertical-align: middle;
+    margin-left: 40vw;
     margin-top: 1vh;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
@@ -2066,20 +2066,24 @@ input {
   }
 
 
-  .container4 .btn-primary {
-    /* margin-left: 50vw; */
+  .container4 .btnfxtm {
+    display: inline-block;
+    position: absolute;
+    width: 15vh;
+    height: 6vh;
+    margin-left: 50vw;
     margin-top: 1vh;
     text-align: left;
     background-color:#05031b;
     border-radius: 10px;
   }
-  
-  .container4 .btn-primary img{
+
+  .container4 .btnfxtm img{
     top: 0;
     height: 3vh;
-
+    margin-left: -3vh;
+    width: 100;
   }
-  
 
   .container4 .btnicmarkets {
     display: inline-block;
@@ -2191,8 +2195,8 @@ input {
     .container4 p {
       margin: auto;
       line-height: 20px;
-      /* vertical-align: middle;
-      margin-left: 40vw; */
+      vertical-align: middle;
+      margin-left: 40vw;
       margin-top: 1vh;
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 15px;
@@ -2210,20 +2214,24 @@ input {
   }
 
 
-  .container4 .btn-primary {
-    /* margin-left: 50vw; */
+  .container4 .btnfxtm {
+    display: inline-block;
+    position: absolute;
+    width: 15vh;
+    height: 6vh;
+    margin-left: 50vw;
     margin-top: 1vh;
     text-align: left;
     background-color:#05031b;
     border-radius: 10px;
   }
-  
-  .container4 .btn-primary img{
+
+  .container4 .btnfxtm img{
     top: 0;
     height: 3vh;
-
+    margin-left: -3vh;
+    width: 100;
   }
-  
 
   .container4 .btnicmarkets {
     display: inline-block;
@@ -2336,8 +2344,8 @@ input {
   .container4 p {
     margin: auto;
     line-height: 20px;
-    /* vertical-align: middle;
-    margin-left: 40vw; */
+    vertical-align: middle;
+    margin-left: 40vw;
     margin-top: 1vh;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
@@ -2355,27 +2363,31 @@ input {
   }
 
 
-  .container4 .btn-primary {
-    /* margin-left: 50vw; */
+  .container4 .btnfxtm {
+    display: inline-block;
+    position: absolute;
+    width: 15vh;
+    height: 6vh;
+    margin-left: 50vw;
     margin-top: 1vh;
     text-align: left;
     background-color:#05031b;
     border-radius: 10px;
   }
-  
-  .container4 .btn-primary img{
+
+  .container4 .btnfxtm img{
     top: 0;
     height: 3vh;
- 
+    margin-left: -3vh;
+    width: 100;
   }
-  
 
   .container4 .btnicmarkets {
     display: inline-block;
     position: absolute;
     width: 15vh;
     height: 6vh;
-    /* margin-left: 40vw; */
+    margin-left: 40vw;
     padding: 5px;
     margin-top: 1vh;
     text-align: left;
@@ -2479,8 +2491,8 @@ input {
   .container4 p {
     margin: auto;
     line-height: 17px;
-    /* vertical-align: middle;
-    margin-left: 40vw; */
+    vertical-align: middle;
+    margin-left: 40vw;
     margin-top: 1vh;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
@@ -2496,28 +2508,32 @@ input {
     margin-bottom: 10vh;
   }
 
-  .container4 .btn-primary {
-    /* margin-left: 50vw; */
+
+  .container4 .btnfxtm {
+    display: inline-block;
+    position: absolute;
+    width: 15vh;
+    height: 6vh;
+    margin-left: 50vw;
     margin-top: 1vh;
     text-align: left;
     background-color:#05031b;
     border-radius: 10px;
   }
-  
-  .container4 .btn-primary img{
+
+  .container4 .btnfxtm img{
     top: 0;
     height: 3vh;
-   
- 
+    margin-left: -3vh;
+    width: 100;
   }
-  
 
   .container4 .btnicmarkets {
     display: inline-block;
     position: absolute;
     width: 15vh;
     height: 6vh;
-    /* margin-left: 40vw; */
+    margin-left: 40vw;
     padding: 5px;
     margin-top: 1vh;
     text-align: left;
@@ -2594,13 +2610,20 @@ input {
 
 
 
+
+
+
+
+
+
+
+
+
 .container5 {
   background-image: url("servicos.svg");
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: contain;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
+  background-size: contain;
   max-width: 100%;
   left: 0;
 }
@@ -2731,7 +2754,7 @@ display:flex; justify-content: left; align-items: center;
 }
 
 .container5 .adic{
-  margin-top: 3vh;
+  margin-top: 2vh;
   margin-left: 14vw;
 }
 
@@ -4375,7 +4398,7 @@ display:flex; justify-content: left; align-items: center;
   margin: auto;
   line-height: 30px;
   vertical-align: middle;
-  /* margin-left: 10vh; */
+  margin-left: 10vh;
   weight: 950;
   padding-top: 10vh;
   font-family: 'Source Sans Pro', sans-serif;
@@ -4392,7 +4415,7 @@ display:flex; justify-content: left; align-items: center;
 
 
 .container7 .mensal {
-
+  margin-left: 12vw;
   margin-top: 15vh;
 }
 
@@ -4412,7 +4435,7 @@ display:flex; justify-content: left; align-items: center;
 .container7 .mensal p{
   color: #fff;
   font-size:9px;
-  margin-left: 1vw;
+  margin-left: 5vw;
   margin-top: 2vh;
   text-align: left;
 }
@@ -4432,7 +4455,7 @@ display:flex; justify-content: left; align-items: center;
 }
 
 .container7 .mensal .check-list .material-icons {
-  margin-left: 2vw;
+  margin-left: 4vw;
   margin-top: -40vh;
 }
 
@@ -4440,14 +4463,14 @@ display:flex; justify-content: left; align-items: center;
 
 
 .container7 .semestral{
-  /* margin-left: 25vw; */
-  /* margin-top: -55vh; */
+  margin-left: 25vw;
+  margin-top: -65vh;
 }
 
 .container7 .semestral  h1{
   color: #fff;
   font-size: 35px;
-  /* margin-left: 6vw; */
+  margin-left: 6vw;
   margin-top: 6vh;
   text-transform: uppercase;
 }
@@ -4476,14 +4499,14 @@ display:flex; justify-content: left; align-items: center;
 .container7 .semestral  p{
   color: #fff;
   font-size:11px;
-  margin-left: 2vw;
+  margin-left: 4vw;
   margin-top: 2vh;
   text-align: left;
 }
 
 .container7 .semestral button {
   margin-top: 1vh;
-  margin-left: 1vw;
+  margin-left: 5vw;
   border-radius: 10px;
   font-size: 12px;
   background-color: #05031b;
@@ -4496,7 +4519,7 @@ display:flex; justify-content: left; align-items: center;
 }
 
 .container7 .semestral .check-list .material-icons {
-  margin-left: 2vw;
+  margin-left: 4vw;
   margin-top: -15vh;
 }
 
@@ -4505,14 +4528,14 @@ display:flex; justify-content: left; align-items: center;
 
 
 .container7 .trimestral{
-  /* margin-left: 40vw;
-  margin-top: -65vh; */
+  margin-left: 40vw;
+  margin-top: -65vh;
 }
 
 .container7 .trimestral  h1{
   color: #fff;
   font-size: 35px;
-  margin-left: 2vw;
+  margin-left: 4vw;
   margin-top: 6vh;
   text-transform: uppercase;
 }
@@ -4549,7 +4572,7 @@ display:flex; justify-content: left; align-items: center;
 
 .container7 .trimestral button {
   margin-top: 1vh;
-  margin-left: 1vw;
+  margin-left: 5vw;
   border-radius: 10px;
   font-size: 11px;
   background-color: rgb(220,52,52);
@@ -4562,7 +4585,7 @@ display:flex; justify-content: left; align-items: center;
 }
 
 .container7 .trimestral .check-list .material-icons {
-  margin-left: 2vw;
+  margin-left: 4vw;
   margin-top: -1vh;
 }
 
@@ -4575,7 +4598,7 @@ display:flex; justify-content: left; align-items: center;
     margin: auto;
     line-height: 30px;
     vertical-align: middle;
-    /* margin-left: 10vh; */
+    margin-left: 10vh;
     weight: 950;
     padding-top: 10vh;
     font-family: 'Source Sans Pro', sans-serif;
@@ -4592,7 +4615,7 @@ display:flex; justify-content: left; align-items: center;
 
 
   .container7 .mensal {
-    /* margin-left: 13vw; */
+    margin-left: 13vw;
     margin-top: 15vh;
   }
 
@@ -4603,12 +4626,11 @@ display:flex; justify-content: left; align-items: center;
     text-transform: uppercase;
   }
 
-  .container7 .mensal .money{
+  .container7 .mensal h2{
     color: #fff;
-    /* margin-right: 47vh; */
-    font-size: 37px;
-    display: block;
-    /* margin-top: -1vh; */
+    margin-right: 47vh;
+    font-size: 27px;
+    margin-top: -1vh;
   }
 
   .container7 .mensal p{
@@ -4634,7 +4656,7 @@ display:flex; justify-content: left; align-items: center;
   }
 
   .container7 .mensal .check-list .material-icons {
-    margin-left: 2vw;
+    margin-left: 4vw;
     margin-top: -45vh;
     font-size: 20px;
   }
@@ -4643,14 +4665,14 @@ display:flex; justify-content: left; align-items: center;
 
 
   .container7 .semestral{
-    /* margin-left: 27vw; */
-    /* margin-top: -70vh; */
+    margin-left: 27vw;
+    margin-top: -70vh;
   }
 
   .container7 .semestral  h1{
     color: #fff;
     font-size: 35px;
-    /* margin-left: 6vw; */
+    margin-left: 6vw;
     margin-top: 10vh;
     text-transform: uppercase;
   }
@@ -4685,7 +4707,7 @@ display:flex; justify-content: left; align-items: center;
 
   .container7 .semestral button {
     margin-top: 1vh;
-    margin-left: 1vw;
+    margin-left: 5vw;
     border-radius: 10px;
     font-size: 14px;
     background-color: #05031b;
@@ -4698,7 +4720,7 @@ display:flex; justify-content: left; align-items: center;
   }
 
   .container7 .semestral .check-list .material-icons {
-    margin-left: 2vw;
+    margin-left: 4vw;
     margin-top: -1vh;
   }
 
@@ -4707,14 +4729,14 @@ display:flex; justify-content: left; align-items: center;
 
 
   .container7 .trimestral{
-    /* margin-left: 42vw;
-    margin-top: -72vh; */
+    margin-left: 42vw;
+    margin-top: -72vh;
   }
 
   .container7 .trimestral  h1{
     color: #fff;
     font-size: 35px;
-    /* margin-left: 1vw; */
+    margin-left: 5vw;
     margin-top: 10vh;
     text-transform: uppercase;
   }
@@ -4724,7 +4746,7 @@ display:flex; justify-content: left; align-items: center;
     font-size: 17px;
     font-size: 27px;
     margin-top: -2vh;
-    margin-left: 2vw;
+    margin-left: 4vw;
     text-decoration: line-through;
   }
   .container7 .trimestral  .overline {
@@ -4780,7 +4802,7 @@ display:flex; justify-content: left; align-items: center;
     margin: auto;
     line-height: 30px;
     vertical-align: middle;
-    /* margin-left: 10vh; */
+    margin-left: 10vh;
     weight: 950;
     padding-top: 10vh;
     font-family: 'Source Sans Pro', sans-serif;
@@ -4797,7 +4819,7 @@ display:flex; justify-content: left; align-items: center;
 
 
   .container7 .mensal {
-    /* margin-left: 13vw; */
+    margin-left: 13vw;
     margin-top: 12vh;
   }
 
@@ -4839,7 +4861,7 @@ display:flex; justify-content: left; align-items: center;
   }
 
   .container7 .mensal .check-list .material-icons {
-    margin-left: 2vw;
+    margin-left: 4vw;
     margin-top: -45vh;
     font-size: 20px;
   }
@@ -4848,14 +4870,14 @@ display:flex; justify-content: left; align-items: center;
 
 
   .container7 .semestral{
-    /* margin-left: 25vw; */
-    /* margin-top: -70vh; */
+    margin-left: 25vw;
+    margin-top: -70vh;
   }
 
   .container7 .semestral  h1{
     color: #fff;
     font-size: 35px;
-    /* margin-left: 6vw; */
+    margin-left: 6vw;
     margin-top: 8vh;
     text-transform: uppercase;
   }
@@ -4883,14 +4905,14 @@ display:flex; justify-content: left; align-items: center;
   .container7 .semestral  p{
     color: #fff;
     font-size:11.3px;
-    margin-left: 2vw;
+    margin-left: 4vw;
     margin-top: 2vh;
     text-align: left;
   }
 
   .container7 .semestral button {
     margin-top: 0.2 vh;
-    margin-left: 1vw;
+    margin-left: 5vw;
     border-radius: 10px;
     font-size: 14px;
     background-color: #05031b;
@@ -4904,7 +4926,7 @@ display:flex; justify-content: left; align-items: center;
   }
 
   .container7 .semestral .check-list .material-icons {
-    margin-left: 2vw;
+    margin-left: 4vw;
     margin-top: -3vh;
   }
 
@@ -4913,14 +4935,14 @@ display:flex; justify-content: left; align-items: center;
 
 
   .container7 .trimestral{
-    /* margin-left: 40.4vw;
-    margin-top: -70vh; */
+    margin-left: 40.4vw;
+    margin-top: -70vh;
   }
 
   .container7 .trimestral  h1{
     color: #fff;
     font-size: 35px;
-    /* margin-left: 1vw; */
+    margin-left: 5vw;
     margin-top: 10vh;
     text-transform: uppercase;
   }
@@ -4930,7 +4952,7 @@ display:flex; justify-content: left; align-items: center;
     font-size: 17px;
     font-size: 27px;
     margin-top: -1vh;
-    margin-left: 1vw;
+    margin-left: 5vw;
     text-decoration: line-through;
   }
   .container7 .trimestral  .overline {
@@ -4983,7 +5005,7 @@ display:flex; justify-content: left; align-items: center;
     margin: auto;
     line-height: 30px;
     vertical-align: middle;
-    /* margin-left: 10vh; */
+    margin-left: 10vh;
     weight: 950;
     padding-top: 10vh;
     font-family: 'Source Sans Pro', sans-serif;
@@ -5000,7 +5022,7 @@ display:flex; justify-content: left; align-items: center;
 
 
   .container7 .mensal {
-    /* margin-left: 12vw; */
+    margin-left: 12vw;
     margin-top: 10vh;
   }
 
@@ -5044,7 +5066,7 @@ display:flex; justify-content: left; align-items: center;
   }
 
   .container7 .mensal .check-list .material-icons {
-    margin-left: 1vw;
+    margin-left: 5vw;
     margin-top: -46vh;
     font-size: 20px;
   }
@@ -5053,14 +5075,14 @@ display:flex; justify-content: left; align-items: center;
 
 
   .container7 .semestral{
-    /* margin-left: 27vw; */
-    /* margin-top: -65vh; */
+    margin-left: 27vw;
+    margin-top: -65vh;
   }
 
   .container7 .semestral  h1{
     color: #fff;
     font-size: 35px;
-    /* margin-left: 6vw; */
+    margin-left: 6vw;
     margin-top: 6vh;
     text-transform: uppercase;
   }
@@ -5088,7 +5110,7 @@ display:flex; justify-content: left; align-items: center;
   .container7 .semestral  p{
     color: #fff;
     font-size: 9px;
-    margin-left: 1vw;
+    margin-left: 5vw;
     margin-top: 2vh;
     text-align: left;
   }
@@ -5110,7 +5132,7 @@ display:flex; justify-content: left; align-items: center;
   }
 
   .container7 .semestral .check-list .material-icons {
-    margin-left: 2vw;
+    margin-left: 4vw;
     margin-top: -15vh;
     font-size: 20px;
   }
@@ -5120,14 +5142,14 @@ display:flex; justify-content: left; align-items: center;
 
 
   .container7 .trimestral{
-    /* margin-left: 45vw;
-    margin-top: -60vh; */
+    margin-left: 45vw;
+    margin-top: -60vh;
   }
 
   .container7 .trimestral  h1{
     color: #fff;
     font-size: 35px;
-    /* margin-left: 3vw; */
+    margin-left: 3vw;
     margin-top: 6vh;
     text-transform: uppercase;
   }
@@ -5190,7 +5212,7 @@ display:flex; justify-content: left; align-items: center;
     margin: auto;
     line-height: 30px;
     vertical-align: middle;
-    /* margin-left: 10vh; */
+    margin-left: 10vh;
     weight: 950;
     padding-top: 10vh;
     font-family: 'Source Sans Pro', sans-serif;
@@ -5207,7 +5229,7 @@ display:flex; justify-content: left; align-items: center;
 
 
   .container7 .mensal {
-    /* margin-left: 12vw; */
+    margin-left: 12vw;
     margin-top: 13vh;
   }
 
@@ -5228,7 +5250,7 @@ display:flex; justify-content: left; align-items: center;
   .container7 .mensal p{
     color: #fff;
     font-size: 8px;
-    margin-left: 2vw;
+    margin-left: 4vw;
     margin-top: 2vh;
     text-align: left;
   }
@@ -5249,7 +5271,7 @@ display:flex; justify-content: left; align-items: center;
   }
 
   .container7 .mensal .check-list .material-icons {
-    margin-left: 2vw;
+    margin-left: 4vw;
     margin-top: -45vh;
     font-size: 20px;
   }
@@ -5258,14 +5280,14 @@ display:flex; justify-content: left; align-items: center;
 
 
   .container7 .semestral{
-    /* margin-left: 24vw; */
-    /* margin-top: -75vh; */
+    margin-left: 24vw;
+    margin-top: -75vh;
   }
 
   .container7 .semestral  h1{
     color: #fff;
     font-size: 35px;
-    /* margin-left: 6vw; */
+    margin-left: 6vw;
     margin-top: 6vh;
     text-transform: uppercase;
   }
@@ -5294,14 +5316,14 @@ display:flex; justify-content: left; align-items: center;
   .container7 .semestral  p{
     color: #fff;
     font-size: 7px;
-    margin-left: 1vw;
+    margin-left: 5vw;
     margin-top: 2vh;
     text-align: left;
   }
 
   .container7 .semestral button {
     margin-top: 1vh;
-    margin-left: 1vw;
+    margin-left: 5vw;
     border-radius: 10px;
     font-size: 10px;
     padding: 10px;
@@ -5315,7 +5337,7 @@ display:flex; justify-content: left; align-items: center;
   }
 
   .container7 .semestral .check-list .material-icons {
-    margin-left: 2vw;
+    margin-left: 4vw;
     margin-top: -15vh;
     font-size: 20px;
   }
@@ -5325,14 +5347,14 @@ display:flex; justify-content: left; align-items: center;
 
 
   .container7 .trimestral{
-    /* margin-left: 42vw;
-    margin-top: -72vh; */
+    margin-left: 42vw;
+    margin-top: -72vh;
   }
 
   .container7 .trimestral  h1{
     color: #fff;
     font-size: 35px;
-    /* margin-left: 3vw; */
+    margin-left: 3vw;
     margin-top: 6vh;
     text-transform: uppercase;
   }
@@ -5342,7 +5364,7 @@ display:flex; justify-content: left; align-items: center;
     font-size: 17px;
     font-size: 27px;
     margin-top: -2vh;
-    /* margin-left: 2vw; */
+    margin-left: 2vw;
     text-decoration: line-through;
   }
   .container7 .trimestral  .overline {
@@ -5369,7 +5391,7 @@ display:flex; justify-content: left; align-items: center;
 
   .container7 .trimestral button {
     margin-top: 1vh;
-    margin-left: 1vw;
+    margin-left: 5vw;
     border-radius: 10px;
     font-size: 11px;
     background-color: rgb(220,52,52);

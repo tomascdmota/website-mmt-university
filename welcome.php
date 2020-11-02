@@ -308,8 +308,6 @@
 
             <button>Contratar</button>
           </div>
-
-          
           </div>
             </div>
         </section>
