@@ -77,8 +77,8 @@ function uidExists($conn, $username, $email){
 
 
 
-function createUser($conn, $name, $email, $username, $pwd){
-  $sql = "INSERT INTO users (usersName, usersEmail, usersUid, usersPwd) VALUES (?, ?, ?, ?);";
+function createUser($conn, $name, $email, $username, $pwd, $vkey){
+  $sql = "INSERT INTO users (usersName, usersEmail, usersUid, usersPwd, vkey) VALUES (?, ?, ?, ?, ?);";
   $stmt = mysqli_stmt_init($conn);
 
   if (!mysqli_stmt_prepare($stmt, $sql) ) {
@@ -88,12 +88,20 @@ function createUser($conn, $name, $email, $username, $pwd){
 
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 
-    mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $username, $hashedPwd);
+    mysqli_stmt_bind_param($stmt, "sssss", $name, $email, $username, $hashedPwd, $vkey);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
 
-    header("location: index.html?error=none");
-    exit();
+    header("location: ../mainpage/index.html");
+
+
+   
+
+
+
+
+
+    
 
 }
 
@@ -101,6 +109,7 @@ function createUser($conn, $name, $email, $username, $pwd){
 
 function emptyInputLogin($username, $pwd){
   $result;
+ 
   if (empty($username) || empty($pwd)) {
     $result = true;
   } else {
@@ -112,7 +121,6 @@ function emptyInputLogin($username, $pwd){
 
 function loginUser($conn, $username, $pwd) {
   $uidExists = uidExists($conn, $username, $username);
-
   if ($uidExists === false) {
     header("location: ../index.html?error=wronglogin");
     exit();
@@ -124,7 +132,7 @@ function loginUser($conn, $username, $pwd) {
   if ($checkPwd === false) {
     header("location: ../index.html?error=wronglogin");
     exit();
-  } else if($checkPwd === true){
+  } else if($checkPwd === true ){
     session_start();
     $_SESSION["userid"] = $uidExists["usersId"] ;
     $_SESSION["useruid"] = $uidExists["usersUid"] ;

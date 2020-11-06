@@ -11,10 +11,8 @@ if (isset($_POST["submit"])) {
   if (emptyInputLogin($username, $pwd) !== false) {
     header("location: welcome.php?error=emptyInput");
     exit();
-  }
+  } 
 
-
-  loginUser($conn, $username, $pwd);
 }
 else {
   header("location: main/index.html");
