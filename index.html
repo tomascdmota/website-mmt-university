@@ -80,7 +80,7 @@
               SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA.
               </h2>
             <div class="text-center text-lg-left">
-              <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+              <a type="button" class="btn-get-started" data-toggle="modal" data-target="#myModal">
                 Começar
               </a>
             </div>
@@ -119,59 +119,36 @@
  <div class="modal" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content">
-
-      <div class="form-container sign-up-container">
-        <form action="includes/signup.inc.php" method="POST"class="w-100">
-          <h4 class="mb-3">MMT University</h4>
-          <p>Se registre para começar</p>
-          <div class="form-group">
-            <input class="form-control" type="text" name="name" placeholder="Usuário" />
+      <div class="col-md-6 mx-auto p-0">
+              <div class="card">
+                  <div class="login-box">
+                      <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Acessar</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrar</label>
+                          <div class="login-space">
+                            <form action="includes/login.inc.php" method="POST">
+                              <div class="login">
+                                  <div class="group"> <label for="user" class="label">Usuário/Email</label> <input id="user" type="text" name="uid" class="input" placeholder="Usuário/Email" required> </div>
+                                  <div class="group"> <label for="pass" class="label">Senha</label> <input id="pass" type="password" name="pwd" class="input"  data-type="password" placeholder="Senha" required> </div>
+                                  <div class="group"> <input id="check" type="checkbox" class="check" checked> <label for="check"><span class="icon"></span>Mantenha-me logado</label> </div>
+                                  <div class="group"> <input type="submit" class="button" name="submit" value="Acessar"> </div>
+                                  <div class="hr"></div>
+                                  <div class="foot"> <a href="#">Esqueci a minha senha?</a> </div>
+                              </div>
+                            </form>
+                            <form action="includes/signup.inc.php" method="POST" class="w-100">
+                              <div class="sign-up-form">
+                                  <div class="group"> <label for="user" class="label">Usuário</label> <input id="user" type="text" class="input" name="name" placeholder="Introduza o seu nome" required> </div>
+                                  <div class="group"> <label for="pass" class="label">Email </label> <input id="pass" type="email" class="input" name="email" placeholder="Introduza o seu email" required> </div>
+                                  <div class="group"> <label for="pass" class="label">Nome completo</label> <input id="pass" type="text" class="input" name="uid" placeholder="Nome completo"required > </div>
+                                  <div class="group"> <label for="pass" class="label">Senha</label> <input id="pass" type="password" class="input" name="pwd" data-type="password" placeholder="Senha" required> </div>
+                                  <div class="group"> <label for="pass" class="label">Repita a sua Senha</label> <input id="pass" type="password"  name="pwdrepeat" class="input" data-type="password" placeholder="Repita a sua senha" required> </div>
+                                  <div class="group"> <input type="submit" class="button" name="submit" value="Registrar"> </div>
+                              </div>
+                            </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="form-group">
-            <input class="form-control" type="email" name="email" placeholder="Email" />
-          </div>
-          <div class="form-group">
-            <input class="form-control" type="text" name="uid" placeholder="Nome Completo" />
-          </div>
-          <div class="form-group">
-            <input class="form-control" type="password" name="pwd" placeholder="Senha" />
-          </div>
-          <div class="form-group">
-            <input class="form-control" type="password" name="pwdrepeat" placeholder="Repita a sua senha" />
-          </div>
-          <button class="btn btn-primary" name="submit" type="submit">Registrar</button>
-        </form>
-      </div>
-
-      <div class="form-container sign-in-container">
-        <form action="includes/login.inc.php" method="POST">
-          <h4 class="mb-3">Acessar</h4>
-          <p>Acesse a MMT University</p>
-          <div class="form-group">
-            <input class="form-control" type="name" name="uid" placeholder="Email" />
-          </div>
-          <div class="form-group">
-            <input class="form-control" type="password" name="pwd" placeholder="Senha" />
-          </div>
-          <p><a href="#">Esqueceu a senha?</a></p>
-          <button class="btn btn-primary" name="submit" type="submit">Acessar</button>
-        </form>
-      </div>
-
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-            <h1>Bem vindo!</h1>
-            <p>Para continuar aprendendo, acesse a sua conta!</p>
-            <button class="ghost" id="signIn">Sign In</button>
-          </div>
-          <div class="overlay-panel overlay-right">
-            <h1>MMT University!</h1>
-            <p>Se registre para entrar na melhor universidade trading do mundo.</p>
-            <button class="ghost" id="signUp">Registre-se</button>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
